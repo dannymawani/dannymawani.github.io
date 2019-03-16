@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DMH Consulting on DMH Consulting</title>
+    <link>/</link>
+    <description>Recent content in DMH Consulting on DMH Consulting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Danny Mawani Holmgaard 2019</copyright>
+    <lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Creating a workflow with measurement protocol and R</title>
+      <link>/post/measurement-protocol-usecases/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/measurement-protocol-usecases/</guid>
+      <description>
+
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#how-the-measurement-protcol-works&#34;&gt;How the measurement protcol works&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#usecases&#34;&gt;Usecases&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#uploading-refunds&#34;&gt;Uploading refunds&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#uploading-transactions&#34;&gt;Uploading transactions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#words-of-caution&#34;&gt;words of caution&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#1-create-filters-to-block-views&#34;&gt;1. Create filters to block views&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2-remove-the-exclude-all-hits-from-known-bots-and-spiders-checkmark&#34;&gt;2. Remove the &amp;ldquo;Exclude all hits from known bots and spiders&amp;rdquo; checkmark&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#3-latency&#34;&gt;3. Latency&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#conlusion&#34;&gt;conlusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;This blogpost was inspired by a release to a website which had some last minute changed that when the site when live, caused a javaScript error that blocked the ecommerce transaction data to not populate.&lt;/p&gt;
+
+&lt;p&gt;With this error, the client lost 1800+ transactions to the site meaning that we had to upload these in the right currency format to make sure that all the data was still avaliable.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-the-measurement-protcol-works&#34;&gt;How the measurement protcol works&lt;/h2&gt;
+
+&lt;p&gt;Whenever you visit a website, Google Analytic will collect information by sending a long list of query parameters to an endpoint, to which it is stored and modelled to show information in GA. Visiting this blogpost will for an example generate a network call similar to this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javaScript&#34;&gt;https://www.google-analytics.com/r/collect?v=1&amp;amp;_v=j73&amp;amp;a=1679354847&amp;amp;t=pageview&amp;amp;_s=1&amp;amp;dl=https%3A%2F%2Fwww.mawani.dk%2Fpost%2Fmeasurement-protocol-usecases%2F&amp;amp;ul=en-us&amp;amp;de=UTF-8&amp;amp;dt=Creating%20a%20workflow%20with%20measurement%20protocol%20and%20R%20%7C%20DMH%20Analytics&amp;amp;sd=24-bit&amp;amp;sr=1440x900&amp;amp;vp=1440x256&amp;amp;je=0&amp;amp;_u=QACAAAAB~&amp;amp;jid=651243071&amp;amp;gjid=1319476248&amp;amp;cid=1164110852.1529450664&amp;amp;tid=UA-134673438-1&amp;amp;_gid=106302445.1550868348&amp;amp;_r=1&amp;amp;gtm=2wg241WBTJ7HR&amp;amp;z=1265093896
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will tell Google Analytics that:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The URL is this one&lt;/li&gt;
+&lt;li&gt;My browser language is en-us&lt;/li&gt;
+&lt;li&gt;what my device id is from the cookie so it can recognize me as a new or returning user&lt;/li&gt;
+&lt;li&gt;What tracking ID it should populate the data to&lt;/li&gt;
+&lt;li&gt;What my session ID is.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;What measurement protocol will do is to emulate the same types of parameters and have it populate the data in GA.&lt;/p&gt;
+
+&lt;p&gt;For a more detailed view on measurement protocol I would advise you to visit
+&lt;a href=&#34;https://www.optimizesmart.com/understanding-universal-analytics-measurement-protocol/&#34;&gt;Optimize Smart for their deepgoing description&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;usecases&#34;&gt;Usecases&lt;/h2&gt;
+
+&lt;p&gt;I have used measurement protocol for a various number of things. As you can send in all the supported information, this is a great area to explore in terms of improving your data collection. As for many of my other posts, I will be using another package created by &lt;a href=&#34;https://twitter.com/HoloMarkeD&#34;&gt;Mark Edmonson&lt;/a&gt; called &lt;a href=&#34;https://github.com/MarkEdmondson1234/googleMeasureR&#34;&gt;googleMeasureR&lt;/a&gt; to send the hits to Google Analytics, however you can easily transfer the way of doing this to any language of your choice such as Python, javaScript, PHP etc.&lt;/p&gt;
+
+&lt;h3 id=&#34;uploading-refunds&#34;&gt;Uploading refunds&lt;/h3&gt;
+
+&lt;p&gt;To upload refunds you first need a list of all the transactions that are missing. If you are on a site with multiple currencies it is also quite important that you can specify what unit that you are adding data to, so you are sure that it is populated correctly.&lt;/p&gt;
+
+&lt;p&gt;First thing that need to be done is to make sure that the data is loaded into R. I have chosen to rename the columns to the GA naming convention for measurement protocol, but it is not important:&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/transaction_example.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Once that is made, we need to either have the client id (Google Analytics Cookie ID for identifying people), or create one yourself. This can be done by this code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
+#loading the library
+library(stringi)
+#the count of rows you need to upload
+n &amp;lt;- nrow(yourDataframe)
+
+#create the ids
+paste(&amp;quot;1.2.&amp;quot;,stri_rand_strings(n, 10, pattern = &amp;quot;[0-9]&amp;quot;),&amp;quot;.&amp;quot;,stri_rand_strings(n, 10, pattern = &amp;quot;[0-9]&amp;quot;), sep = &amp;quot;&amp;quot;)
+
+#output will look something like this if you print it out in the console
+
+ [1] &amp;quot;1.2.6237558844.6715115260&amp;quot; &amp;quot;1.2.4893337628.0287915875&amp;quot; &amp;quot;1.2.1414860945.6106576917&amp;quot;
+ [4] &amp;quot;1.2.8992586956.6450277842&amp;quot; &amp;quot;1.2.2032023475.7135641438&amp;quot; &amp;quot;1.2.1490282359.1139988407&amp;quot;
+ [7] &amp;quot;1.2.7613957961.8692578524&amp;quot; &amp;quot;1.2.8481705025.8828767075&amp;quot; &amp;quot;1.2.1331455569.2063291053&amp;quot;
+[10] &amp;quot;1.2.9292335596.4531869013&amp;quot;
+
+### add it to the dataframe
+
+yourDataframe$cid &amp;lt;- paste(&amp;quot;1.2.&amp;quot;,stri_rand_strings(n, 10, pattern = &amp;quot;[0-9]&amp;quot;),&amp;quot;.&amp;quot;,stri_rand_strings(n, 10, pattern = &amp;quot;[0-9]&amp;quot;), sep = &amp;quot;&amp;quot;)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now that a client id is added we are ready to push the refunds into Google Analytics:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
+####upload
+v &amp;lt;- 1 #version
+cs &amp;lt;- &amp;quot;measurementprotocol&amp;quot; #source
+cm &amp;lt;- &amp;quot;refund&amp;quot; #medium
+t &amp;lt;- &amp;quot;event&amp;quot; #type
+ec &amp;lt;- &amp;quot;Ecommerce&amp;quot; #event category
+ea &amp;lt;- &amp;quot;measurementProtocol&amp;quot; #event action
+el &amp;lt;- &amp;quot;refund&amp;quot; #event label
+tid &amp;lt;- &amp;quot;UA-1234567-1&amp;quot; #Google Analytics ID
+pa &amp;lt;- &amp;quot;refund&amp;quot; #product action
+ta &amp;lt;- &amp;quot;measurementprotocol&amp;quot; #transaction affiliation
+
+#for each row in the dataframe send a hit with measurement protocol
+for(i in 1:nrow(yourDataframe)) {
+  cid &amp;lt;- yourDataframe$cid[i]
+  ti &amp;lt;- yourDataframe$ti[i]
+  tr &amp;lt;- yourDataframe$tr[i]
+  cu &amp;lt;- yourDataframe$cu[i]
+  gmr_post(list(v=v,cs=cs,cm=cm,t=t,ec=ec,ea=ea,el=el,tid=tid,cid=cid,pa=pa,ti=ti,tr=tr,cu=cu,ta=ta,ni=&amp;quot;1&amp;quot;))
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And there you have it, the refunds should be uploaded.&lt;/p&gt;
+
+&lt;h3 id=&#34;uploading-transactions&#34;&gt;Uploading transactions&lt;/h3&gt;
+
+&lt;p&gt;This is actually the exact same steps you go through - the primary difference is that you need to change the product action from refund to purchase:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
+####upload
+v &amp;lt;- 1 #version
+cs &amp;lt;- &amp;quot;measurementprotocol&amp;quot; #source
+cm &amp;lt;- &amp;quot;purchase&amp;quot; #medium
+t &amp;lt;- &amp;quot;event&amp;quot; #type
+ec &amp;lt;- &amp;quot;Ecommerce&amp;quot; #event category
+ea &amp;lt;- &amp;quot;measurementProtocol&amp;quot; #event action
+el &amp;lt;- &amp;quot;refund&amp;quot; #event label
+tid &amp;lt;- &amp;quot;UA-1234567-1&amp;quot; #Google Analytics ID
+pa &amp;lt;- &amp;quot;purchase&amp;quot; #product action
+ta &amp;lt;- &amp;quot;measurementprotocol&amp;quot; #transaction affiliation
+
+#for each row in the dataframe send a hit with measurement protocol
+for(i in 1:nrow(yourDataframe)) {
+  cid &amp;lt;- yourDataframe$cid[i]
+  ti &amp;lt;- yourDataframe$ti[i]
+  tr &amp;lt;- yourDataframe$tr[i]
+  cu &amp;lt;- yourDataframe$cu[i]
+  gmr_post(list(v=v,cs=cs,cm=cm,t=t,ec=ec,ea=ea,el=el,tid=tid,cid=cid,pa=pa,ti=ti,tr=tr,cu=cu,ta=ta,ni=&amp;quot;1&amp;quot;))
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;words-of-caution&#34;&gt;words of caution&lt;/h2&gt;
+
+&lt;p&gt;When you add data to Google Analytics, it is not possible to remove it again, so remember to test what you are doing beforehand and be sure that what you are doing is correct.&lt;/p&gt;
+
+&lt;p&gt;Below is some areas that you need to remember when doing uploads through measurement protocol:&lt;/p&gt;
+
+&lt;h3 id=&#34;1-create-filters-to-block-views&#34;&gt;1. Create filters to block views&lt;/h3&gt;
+
+&lt;p&gt;Create an exclude filter to exclude all event action called &amp;ldquo;measurementprotocol&amp;rdquo;. This ensures that you data is only send to the views you need.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-remove-the-exclude-all-hits-from-known-bots-and-spiders-checkmark&#34;&gt;2. Remove the &amp;ldquo;Exclude all hits from known bots and spiders&amp;rdquo; checkmark&lt;/h3&gt;
+
+&lt;p&gt;In some instances I saw that the measurement protocol hits where blocked when this was not checked off. Remember to switch it on the day after so you are secured against people spamming your analytics account with bot traffic.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-latency&#34;&gt;3. Latency&lt;/h3&gt;
+
+&lt;p&gt;There is a latency from the the data is send to that it is populated. Unfortunately if you add / remove filters before the day is over it will take in / remove the hits from measurement protocol meaning that you will endanger your datacollection.&lt;/p&gt;
+
+&lt;h2 id=&#34;conlusion&#34;&gt;conlusion&lt;/h2&gt;
+
+&lt;p&gt;This is a simple how-to guide on doing basic things with measurement protocol, there are a lot about datacleaning that could have been included but it would be out of the scope of this blogpost.&lt;/p&gt;
+
+&lt;p&gt;In terms of all the parameters added in the call, there are many that could have been excluded, however i choose to add them as it will be easier to filter them out in different instances should you need to do that.&lt;/p&gt;
+
+&lt;p&gt;A main issue with measurement protocol, when you don&amp;rsquo;t have the right client id is that you do loose the user behaviour and affect your traffic if you are doing bulk uploads in a day. It is therefore important to consider if this is the right solution for the task, and be sure that the data being send in is correct.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Detect missing data in GA with R</title>
+      <link>/post/detect-missing-data-with-r-a-google-analytics-example/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/detect-missing-data-with-r-a-google-analytics-example/</guid>
+      <description>
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;This post is based on a project where we needed to see how many transactions we were actually missing in Google Analytics.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-how-to&#34;&gt;The how to&lt;/h2&gt;
+
+&lt;p&gt;This process is quite simple,
+we will be pulling out transaction id&amp;rsquo;s and then make it into a list. After that we compare that list with another&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ga_id &amp;lt;- &amp;quot;yourgaid&amp;quot;
+
+data &amp;lt;- google_analytics(ga_id, 
+                         date_range = c(&amp;quot;2019-01-23&amp;quot;, &amp;quot;2019-02-13&amp;quot;), 
+                         metrics = &amp;quot;users&amp;quot;, 
+                         dimensions = c(&amp;quot;transactionId&amp;quot;),
+                         max = -1)
+
+#Your transaction ids
+rowa &amp;lt;- as.list(data$transactionId)
+
+#the other list of transaction ids
+rowb &amp;lt;- as.list(sfData$ti)
+
+#make them into characters
+rowa &amp;lt;- as.character(rowa)
+rowb &amp;lt;- as.character(rowb)
+
+#Only get the ones that doesn&#39;t match
+list1 &amp;lt;- setdiff(rowb, rowa)
+
+#Make a dataframe from only those who are missing
+df &amp;lt;- sfData[sfData$ti %in% list1, ]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;This is a very short tutorial, it is not formatted very pretty, but it should get the trick done in terms of validating if anything should be missing in terms of transactions in Google Analytics. Please leave a comment should you need further elaboration on this progress!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pull data from multiple Google Analytics Properties with R</title>
+      <link>/post/pull-data-from-multiple-ga-properties/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/pull-data-from-multiple-ga-properties/</guid>
+      <description>
+
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#background&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#usecase&#34;&gt;Usecase&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#the-code&#34;&gt;The code&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#1-connect-to-google-analytics&#34;&gt;1. Connect To Google Analytics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2-setting-up-the-script-to-pull-from-multiple-properties&#34;&gt;2. Setting up the script to pull from multiple properties&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;Being in an agency, we often have to do benchmarks, reports etc. that require us to pull data from multiple Google Analytics properties.&lt;/p&gt;
+
+&lt;h2 id=&#34;usecase&#34;&gt;Usecase&lt;/h2&gt;
+
+&lt;p&gt;One of our client have multiple properties each containing 3 business units, a B2B, B2C and B2G (Business to government). To make sure that we could reproduce the reporting for them, we build an R script that:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pulls Google Analytics data&lt;/li&gt;
+&lt;li&gt;Adds business unit and country to the dataframe as additional variables / columns&lt;/li&gt;
+&lt;li&gt;Merges the data into another dataframe&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;the-code&#34;&gt;The code&lt;/h2&gt;
+
+&lt;p&gt;To extract the data, use the &lt;code&gt;googleAnalyticsR&lt;/code&gt;and &lt;code&gt;googleAuthR&lt;/code&gt;package made by &lt;a href=&#34;https://twitter.com/HoloMarkeD&#34;&gt;Mark Edmonson&lt;/a&gt;. To see more information about installing the packages and using the libraries please check out the site made explaining how the package work &lt;a href=&#34;http://code.markedmondson.me/googleAnalyticsR/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;1-connect-to-google-analytics&#34;&gt;1. Connect To Google Analytics&lt;/h3&gt;
+
+&lt;p&gt;To begin with we must first authenticate to Google Analytics.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(googleAnalyticsR)
+googleAnalyticsR::ga_auth()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next you will be asked to log in with your Google Account. Once that is done, we are ready to do the rest of the script.&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;Remember to authenticate with the account you want access to&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;2-setting-up-the-script-to-pull-from-multiple-properties&#34;&gt;2. Setting up the script to pull from multiple properties&lt;/h3&gt;
+
+&lt;p&gt;To combine different properties we are fest specifying the views we need and adding them to a list. Once that is done we will create 2 corresponding lists with business units and countries.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#this are the view links which can be find under view settings or through the URL of the view - If you are used to working with this package, you can also do an extraction of all your views directly from R. The below views are fake.
+
+#Danish
+dk_b2b &amp;lt;- &amp;quot;123213213&amp;quot;
+dk_b2c &amp;lt;- &amp;quot;543454533&amp;quot;
+dk_b2g &amp;lt;- &amp;quot;173714215&amp;quot;
+
+#Finnish
+fi_b2b &amp;lt;- &amp;quot;345345435&amp;quot;
+fi_b2c &amp;lt;- &amp;quot;345435345&amp;quot;
+fi_b2g &amp;lt;- &amp;quot;234234232&amp;quot;
+
+#French
+fr_b2b &amp;lt;- &amp;quot;655464555&amp;quot;
+fr_b2c &amp;lt;- &amp;quot;989834589&amp;quot;
+fr_b2g &amp;lt;- &amp;quot;039485309&amp;quot;
+
+#adding all the views to a list
+views &amp;lt;- c(dk_b2b,dk_b2c,dk_b2g,fi_b2b,fi_b2c,fi_b2g,fr_b2b,fr_b2c,fr_b2g)
+
+#countries should be in the same order as your list above, we will use this to add attributes to the dataframe
+countries &amp;lt;- c(&amp;quot;DK&amp;quot;,&amp;quot;DK&amp;quot;,&amp;quot;DK&amp;quot;,&amp;quot;FI&amp;quot;,&amp;quot;FI&amp;quot;,&amp;quot;FI&amp;quot;,&amp;quot;FR&amp;quot;,&amp;quot;FR&amp;quot;,&amp;quot;FR&amp;quot;)
+
+#same approach for business units
+BU &amp;lt;- c(&amp;quot;B2B&amp;quot;,&amp;quot;B2C&amp;quot;,&amp;quot;B2G&amp;quot;,&amp;quot;B2B&amp;quot;,&amp;quot;B2C&amp;quot;,&amp;quot;B2G&amp;quot;,&amp;quot;B2B&amp;quot;,&amp;quot;B2C&amp;quot;,&amp;quot;B2G&amp;quot;)
+
+#Set a start and enddate
+startDate &amp;lt;- &amp;quot;2018-01-01&amp;quot;
+endDate &amp;lt;- as.character(Sys.Date()-1)
+
+#Set dimensions and metrics
+dimensions &amp;lt;- c(&amp;quot;year&amp;quot;,&amp;quot;sourceMedium&amp;quot;,&amp;quot;campaign&amp;quot;)
+metrics &amp;lt;- c(&amp;quot;sessions&amp;quot;,&amp;quot;transactions&amp;quot;,&amp;quot;transactionRevenue&amp;quot;)
+
+#create an empty dataframe
+upload &amp;lt;- data.frame()
+
+#pulling the data
+for(i in seq_along(views)) {
+  data &amp;lt;- google_analytics(views[i], date_range = c(startDate,endDate), metrics = metrics,
+                   dimensions = dimensions,max = -1)
+
+data$country &amp;lt;- countries[i]
+data$bu &amp;lt;- BU[i]
+
+upload &amp;lt;- rbind(upload,data)
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The end states that for each element in the view list, then run the analytics script, apply the data and business unit to the corresponding list item to the dataframe &amp;ldquo;data&amp;rdquo;, and then add it to the empty dataframe.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Now that the dataframe has been made it is up to you what to do with it. you can either upload it to &lt;a href=&#34;https://bigquery.cloud.google.com&#34;&gt;bigQuery&lt;/a&gt;, do some statistics with R and some plot with &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;ggplot2&lt;/a&gt; or just write it down to a CSV file with &lt;code&gt;r write.csv2(upload,&amp;quot;yourFileName.csv&amp;quot;)&lt;/code&gt; and work with it in another tool like Excel, Tableau or powerBI.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Source R scripts from github through Google Cloud Storage</title>
+      <link>/post/source-r-with-github/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/source-r-with-github/</guid>
+      <description>
+
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#background&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#why-is-sourcing-from-github-smart&#34;&gt;Why is sourcing from github smart?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#the-how-to-part&#34;&gt;The how-to part&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#1-setting-up-a-github-account&#34;&gt;1. Setting up a github account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2-creating-a-bucket-in-google-cloud-storage&#34;&gt;2. Creating a bucket in Google Cloud Storage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#3-creating-a-trigger-with-cloud-build&#34;&gt;3. Creating a trigger with Cloud Build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#4-setting-up-the-yalm&#34;&gt;4. Setting up the YALM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#5-sourcing-scripts-from-cloud-storage&#34;&gt;5. Sourcing scripts from Cloud Storage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#thoughts-and-conclusion&#34;&gt;Thoughts and conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;In my company, we have gone from 1 person working with adhoc assignment with R, to 4 persons within the last year. This set&amp;rsquo;s up a whole new level of requirements to ensure quality, stability and safety when it comes to working with datamodels and API calls. Furthermore, there is also an aspect of reusability that needed to be set up to ensure that we could produce our solutions faster,and better updated.&lt;/p&gt;
+
+&lt;p&gt;To do this, we started looking into differen&amp;rsquo;t types of systems to work with our code. In the end we have selected Github as our main source of creating our code and documentation.&lt;/p&gt;
+
+&lt;p&gt;To get to know how to do this, I actually used this guide: &lt;a href=&#34;https://www.google.com&#34;&gt;Automated Static Website Publishing with Cloud Build
+&lt;/a&gt;, and used most of the principles in the guide to set up our setup.&lt;/p&gt;
+
+&lt;h2 id=&#34;why-is-sourcing-from-github-smart&#34;&gt;Why is sourcing from github smart?&lt;/h2&gt;
+
+&lt;p&gt;Github allows us to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Share code easily&lt;/li&gt;
+&lt;li&gt;Scale projects to other customers&lt;/li&gt;
+&lt;li&gt;Ensure documentation&lt;/li&gt;
+&lt;li&gt;Making updates to code safe and with the possibility to roll-back should something break&lt;/li&gt;
+&lt;li&gt;See who have created code&lt;/li&gt;
+&lt;li&gt;Source Scripts directly in R&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Unfortunately, going into how to use Github is a bit out of the scope for this post, however I recommend going to Github and read their documentation and do a few searches on the net to get started.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-how-to-part&#34;&gt;The how-to part&lt;/h2&gt;
+
+&lt;p&gt;In order to source R scripts from github there are a few things you need to have ready in order to get ready:&lt;/p&gt;
+
+&lt;h3 id=&#34;1-setting-up-a-github-account&#34;&gt;1. Setting up a github account&lt;/h3&gt;
+
+&lt;p&gt;One of the first thing you will need is to actually create a &lt;a href=&#34;https://www.google.com&#34;&gt;Github account&lt;/a&gt;
+. This can be done on the frontpage:&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/githubFrontpage_githubR.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Once that is done, &lt;a href=&#34;https://github.com/new&#34;&gt;create a repository&lt;/a&gt;:&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/createRepositories_githubR.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Recently, it&amp;rsquo;s been possible to &lt;a href=&#34;https://www.google.com&#34;&gt;create private repositories for free&lt;/a&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. As we are multiple users that are using Github right now, we did manage to get our financaial department to approve the monthly 7$ account fee, however in theory, you could create a shared login to help get you started.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-creating-a-bucket-in-google-cloud-storage&#34;&gt;2. Creating a bucket in Google Cloud Storage&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/billing/docs/how-to/manage-billing-account&#34;&gt;Set up billing for GCP (Google Cloud Platform)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://console.cloud.google.com/storage/&#34;&gt;Create a bucket in Google Cloud Storage)&lt;/a&gt;: &lt;br&gt;
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/createBucket_githubR.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;3-creating-a-trigger-with-cloud-build&#34;&gt;3. Creating a trigger with Cloud Build&lt;/h3&gt;
+
+&lt;p&gt;Now, this part is something that is already documented in the GCP documentaion. To avoid copying the same guide in this post, &lt;a href=&#34;https://cloud.google.com/community/tutorials/automated-publishing-cloud-build&#34;&gt;instead go to this page&lt;/a&gt; and follow the steps from the headling: &lt;strong&gt;Set up automated builds&lt;/strong&gt; until you see this line: &amp;ldquo;Now, create a cloudbuild.yaml&amp;rdquo;. From there, you will not need to follow the rest of the steps to continue this guide.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-setting-up-the-yalm&#34;&gt;4. Setting up the YALM&lt;/h3&gt;
+
+&lt;p&gt;YALM stands for &amp;ldquo;Yet Another Markup Language&amp;rdquo; and will be added to Github. From here, the YALM file sends the information to Cloud Build that copies the updates on Github into the Cloud Storage Bucket just created.&lt;/p&gt;
+
+&lt;p&gt;In your Github repo, click on &amp;ldquo;Create new file&amp;rdquo;. Now, add the following YALM syntax in the edit section:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-YALM&#34;&gt;steps:
+  - name: gcr.io/cloud-builders/gsutil
+    args: [&amp;quot;-m&amp;quot;, &amp;quot;rsync&amp;quot;, &amp;quot;-r&amp;quot;, &amp;quot;-c&amp;quot;, &amp;quot;-d&amp;quot;, &amp;quot;.&amp;quot;, &amp;quot;gs://yourfolderincloudstorage/ifneededthencreateasubfolder&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;save the file as cloudbuild.yaml.&lt;/p&gt;
+
+&lt;p&gt;Once that is done, each change made to your repository will be pushed directly to Google Cloud Storage, where it is possible to run R scripts.&lt;/p&gt;
+
+&lt;h3 id=&#34;5-sourcing-scripts-from-cloud-storage&#34;&gt;5. Sourcing scripts from Cloud Storage&lt;/h3&gt;
+
+&lt;p&gt;Playing around with R and the Google API universe usually means using something that &lt;a href=&#34;http://code.markedmondson.me&#34;&gt;Mark Edmonson has build&lt;/a&gt;, and this post is not an exception.&lt;/p&gt;
+
+&lt;p&gt;We will be using the Package called &amp;ldquo;googleCloudStorageR&amp;rdquo;, which you can find more information about &lt;a href=&#34;https://cran.r-project.org/web/packages/googleCloudStorageR/vignettes/googleCloudStorageR.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To source a script from Google Cloud Storage, use this &lt;code&gt;R code&lt;/code&gt;to authenticate and source the script you need:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;#install.package(&amp;quot;googleCloudStorageR&amp;quot;) if you have not installed it yet
+
+#load the library
+library(googleCloudStorageR)
+
+#Authenticate
+gcs_auth()
+
+googleCloudStorageR::gcs_source(&#39;yoursubfolderifyouhaveone/yourscript.R&#39;, bucket = &#39;yourcreatedbucket&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And voila. This means that you can always download your R files where ever you need it, build on it, add the information back to github and source the script from a third place without having to have multiple copies of your code laying around.&lt;/p&gt;
+
+&lt;h2 id=&#34;thoughts-and-conclusion&#34;&gt;Thoughts and conclusion&lt;/h2&gt;
+
+&lt;p&gt;This post have showed how to use Github to run R scripts and keep them updated. I do recommend trying to document and automate as much as possible when working with R, however this should only be used whenever it makes sense. If you are building something on the fly that will only be used for a specific tasks once, then it might not make sense to go through all of this to make your workflow optimal.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;A repository is a folder to which your content in github is stored. This is usually your code files.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Superweek 2019</title>
+      <link>/talk/superweek-2019/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/superweek-2019/</guid>
+      <description>&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/28qsnfrw9J3zHF&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/superweek2019-dmo-presentation&#34; title=&#34;Superweek2019 dmo presentation&#34; target=&#34;_blank&#34;&gt;Superweek2019 dmo presentation&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Black friday seminar</title>
+      <link>/talk/blackfriday/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/blackfriday/</guid>
+      <description>&lt;p&gt;This talk is in danish.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/LNRdiEFOtMQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to anonymize IP adresses and still be able to exclude internal traffic</title>
+      <link>/talk/ip-anonymization-while-excluding-internal-trafic/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/ip-anonymization-while-excluding-internal-trafic/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://analytics.mawani.dk/excluding-internal-traffic-anonymizing-ip-adresses-google-analytics/&#34;&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/6Vr0jPcBgPD6dd&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/anonymization-of-ip-adresses-with-google-tag-manager&#34; title=&#34;Anonymization of IP adresses with Google Tag Manager&#34; target=&#34;_blank&#34;&gt;Anonymization of IP adresses with Google Tag Manager&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R introduction class for measurecamp</title>
+      <link>/talk/r-introduction-class-measurecamp/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/r-introduction-class-measurecamp/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;the slides&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/uz2aLKQKZ2CSiB&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/rclass&#34; title=&#34;Rclass&#34; target=&#34;_blank&#34;&gt;Rclass&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:a2aa2406-42b7-4030-8bb9-fa53525d20c8&#34;&gt;full link here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Respecting your users by setting Google Tag Manager up for GDPR </title>
+      <link>/talk/gdpr-with-google-tag-manager/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/gdpr-with-google-tag-manager/</guid>
+      <description>&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/8L7n7nX0ZUINKB&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/gdpr-within-google-tag-manager-measurecamp-2018&#34; title=&#34;GDPR within Google Tag Manager - Measurecamp 2018&#34; target=&#34;_blank&#34;&gt;GDPR within Google Tag Manager - Measurecamp 2018&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;This site only uses Google Analytics to show user statistics. No personal information is tracked.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>/slides/example-slides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides/example-slides/</guid>
+      <description>
+
+&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Code block:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+
+&lt;p&gt;Block math:&lt;/p&gt;
+
+&lt;p&gt;$$
+f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+  One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  Three
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/boards.jpg&#34;
+  &gt;
+
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>/talk/slides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/slides/</guid>
+      <description>
+
+&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Code block:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+
+&lt;p&gt;Block math:&lt;/p&gt;
+
+&lt;p&gt;$$
+f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+  One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  Three
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/boards.jpg&#34;
+  &gt;
+
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
