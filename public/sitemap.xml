@@ -4,7 +4,7 @@
     
     <url>
     
-      <loc>/public/post/measurement-protocol-usecases/</loc>
+      <loc>/post/measurement-protocol-usecases/</loc>
       <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
     
-      <loc>/public/post/detect-missing-data-with-r-a-google-analytics-example/</loc>
+      <loc>/post/detect-missing-data-with-r-a-google-analytics-example/</loc>
       <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -20,7 +20,7 @@
     
     <url>
     
-      <loc>/public/post/pull-data-from-multiple-ga-properties/</loc>
+      <loc>/post/pull-data-from-multiple-ga-properties/</loc>
       <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -28,7 +28,7 @@
     
     <url>
     
-      <loc>/public/post/source-r-with-github/</loc>
+      <loc>/post/source-r-with-github/</loc>
       <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -36,7 +36,7 @@
     
     <url>
     
-      <loc>/public/talk/superweek-2019/</loc>
+      <loc>/talk/superweek-2019/</loc>
       <lastmod>2019-02-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -44,7 +44,7 @@
     
     <url>
     
-      <loc>/public/talk/blackfriday/</loc>
+      <loc>/talk/blackfriday/</loc>
       <lastmod>2018-12-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -52,7 +52,7 @@
     
     <url>
     
-      <loc>/public/talk/ip-anonymization-while-excluding-internal-trafic/</loc>
+      <loc>/talk/ip-anonymization-while-excluding-internal-trafic/</loc>
       <lastmod>2018-12-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -60,7 +60,7 @@
     
     <url>
     
-      <loc>/public/talk/r-introduction-class-measurecamp/</loc>
+      <loc>/talk/r-introduction-class-measurecamp/</loc>
       <lastmod>2018-12-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -68,7 +68,7 @@
     
     <url>
     
-      <loc>/public/talk/gdpr-with-google-tag-manager/</loc>
+      <loc>/talk/gdpr-with-google-tag-manager/</loc>
       <lastmod>2018-12-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -76,7 +76,7 @@
     
     <url>
     
-      <loc>/public/privacy/</loc>
+      <loc>/privacy/</loc>
       <lastmod>2018-06-28T00:00:00+02:00</lastmod>
     </url>
     
@@ -84,14 +84,14 @@
     
     <url>
     
-      <loc>/public/author/admin/</loc>
+      <loc>/author/admin/</loc>
     </url>
     
   
     
     <url>
     
-      <loc>/public/author/</loc>
+      <loc>/author/</loc>
       <priority>0</priority>
     </url>
     
@@ -99,7 +99,7 @@
     
     <url>
     
-      <loc>/public/authors/</loc>
+      <loc>/authors/</loc>
       <priority>0</priority>
     </url>
     
@@ -107,7 +107,7 @@
     
     <url>
     
-      <loc>/public/categories/</loc>
+      <loc>/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -115,7 +115,7 @@
     
     <url>
     
-      <loc>/public/post/</loc>
+      <loc>/post/</loc>
       <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -123,7 +123,7 @@
     
     <url>
     
-      <loc>/public/</loc>
+      <loc>/</loc>
       <lastmod>2019-03-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -132,7 +132,7 @@
     
     <url>
     
-      <loc>/public/publication_types/</loc>
+      <loc>/publication_types/</loc>
       <priority>0</priority>
     </url>
     
@@ -140,7 +140,7 @@
     
     <url>
     
-      <loc>/public/talk/</loc>
+      <loc>/talk/</loc>
       <lastmod>2019-02-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -148,7 +148,7 @@
     
     <url>
     
-      <loc>/public/tags/</loc>
+      <loc>/tags/</loc>
       <priority>0</priority>
     </url>
     
@@ -156,7 +156,7 @@
     
     <url>
     
-      <loc>/public/authors/admin/</loc>
+      <loc>/authors/admin/</loc>
       <priority>0</priority>
     </url>
     
