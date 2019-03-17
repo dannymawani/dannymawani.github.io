@@ -1,0 +1,10 @@
+User-Agent: *
+Disallow: 
+Disallow: /categories
+Disallow: /publication_types
+Disallow: /tags
+Disallow: /author
+Disallow: /themes
+
+
+Sitemap: https://www.mawani.dk/sitemap.xml
