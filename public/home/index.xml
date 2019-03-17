@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on DMH Consulting</title>
-    <link>/home/</link>
+    <link>/public/home/</link>
     <description>Recent content in Homes on DMH Consulting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Danny Mawani Holmgaard 2019</copyright>
     
-	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/public/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DMH ANALYTICS</title>
-      <link>/home/hero/</link>
+      <link>/public/home/hero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/hero/</guid>
+      <guid>/public/home/hero/</guid>
       <description>A place where I try to blog about my daily challenges and solutions within R, Google Cloud Platform, Tag Management and Analytics.
 &amp;ldquo;we are not working with big data, we are working with annoying data&amp;rdquo;</description>
     </item>
     
     <item>
       <title>Biography</title>
-      <link>/home/about/</link>
+      <link>/public/home/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/about/</guid>
+      <guid>/public/home/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>/home/experience/</link>
+      <link>/public/home/experience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/experience/</guid>
+      <guid>/public/home/experience/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Posts</title>
-      <link>/home/posts/</link>
+      <link>/public/home/posts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/posts/</guid>
+      <guid>/public/home/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>/home/talks/</link>
+      <link>/public/home/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/talks/</guid>
+      <guid>/public/home/talks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>/home/contact/</link>
+      <link>/public/home/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/contact/</guid>
+      <guid>/public/home/contact/</guid>
       <description></description>
     </item>
     
