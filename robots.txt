@@ -5,6 +5,10 @@ Disallow: /publication_types
 Disallow: /tags
 Disallow: /author
 Disallow: /themes
+Disallow: /tags
+Disallow: /authors
+Disallow: /publication
+
 
 
 Sitemap: https://www.mawani.dk/sitemap.xml
