@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Datascience on DMH Consulting</title>
+    <link>/tags/datascience/</link>
+    <description>Recent content in Datascience on DMH Consulting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Danny Mawani Holmgaard 2019</copyright>
+    <lastBuildDate>Sat, 08 Jun 2019 13:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/datascience/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Example Talk</title>
+      <link>/talk/measurecamp-cph-2019/superweek-2019/</link>
+      <pubDate>Sat, 08 Jun 2019 13:00:00 +0000</pubDate>
+      
+      <guid>/talk/measurecamp-cph-2019/superweek-2019/</guid>
+      <description>An example talk using Academic&amp;rsquo;s Markdown slides feature.</description>
+    </item>
+    
+  </channel>
+</rss>

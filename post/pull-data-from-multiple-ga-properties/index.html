@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.1.0">
-  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="generator" content="Hugo 0.55.6" />
 
   
 
@@ -165,13 +165,12 @@
         "@type" : "BlogPosting",
         "mainEntityOfPage": {
              "@type": "WebPage",
-             "@id": "/"
+             "@id": "\/"
         },
         "articleSection" : "post",
         "name" : "Pull data from multiple Google Analytics Properties with R",
         "headline" : "Pull data from multiple Google Analytics Properties with R",
-        "description" : "Table of Contents    Background Usecase The code  1. Connect To Google Analytics 2. Setting up the script to pull from multiple properties  Conclusion    Background Being in an agency, we often have to do benchmarks, reports etc. that require us to pull data from multiple Google Analytics properties.
-Usecase One of our client have multiple properties each containing 3 business units, a B2B, B2C and B2G (Business to government).",
+        "description" : "Benchmarking your data can be rough. In this post we go through how to pull data from multiple GA accounts",
         "inLanguage" : "en-US",
         "author" : "",
         "creator" : "",
@@ -179,9 +178,9 @@ Usecase One of our client have multiple properties each containing 3 business un
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2019",
-        "datePublished": "2019-03-01 00:00:00 &#43;0000 UTC",
-        "dateModified" : "2019-03-01 00:00:00 &#43;0000 UTC",
-        "url" : "/post/pull-data-from-multiple-ga-properties/",
+        "datePublished": "2019-03-01 00:00:00 \x2b0000 UTC",
+        "dateModified" : "2019-03-01 00:00:00 \x2b0000 UTC",
+        "url" : "\/post\/pull-data-from-multiple-ga-properties\/",
         "wordCount" : "518",
         "keywords" : [ "Blog" ]
     }
@@ -536,7 +535,7 @@ Usecase One of our client have multiple properties each containing 3 business un
     <div class="article-style" itemprop="articleBody">
       
 
-<h2>Table of Contents</h2>
+<p><h2>Table of Contents</h2>
 <nav id="TableOfContents">
 <ul>
 <li>
@@ -551,8 +550,7 @@ Usecase One of our client have multiple properties each containing 3 business un
 <li><a href="#conclusion">Conclusion</a></li>
 </ul></li>
 </ul>
-</nav>
-
+</nav></p>
 
 <h2 id="background">Background</h2>
 
@@ -584,11 +582,11 @@ googleAnalyticsR::ga_auth()
 
 <div class="alert alert-note">
   <div>
-    <p>Remember to authenticate with the account you want access to</p>
+    
+Remember to authenticate with the account you want access to
 
   </div>
 </div>
-
 
 <h3 id="2-setting-up-the-script-to-pull-from-multiple-properties">2. Setting up the script to pull from multiple properties</h3>
 
@@ -669,75 +667,6 @@ upload &lt;- rbind(upload,data)
 
 
 
-
-
-
-<div class="media author-card" itemscope itemtype="http://schema.org/Person">
-  
-  
-  <img class="portrait mr-3" src="/author/admin/avatar_huc9cb1d8f4a6fb54c98a61103315cf07b_190174_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
-  
-
-  <div class="media-body">
-    <h5 class="card-title" itemprop="name"><a href="/authors/admin">Danny Mawani Holmgaard</a></h5>
-    <h6 class="card-subtitle">Board Member</h6>
-    <p class="card-text" itemprop="description">Danny Mawani Holmgaard is an active participant in the analytics community to which he often presents and shares solution towards his com-collegues (competing collegues). His work often consist in a brought mixture of doing Google Analytics and Tag Management implementations, while also handling advanced ETL pipelines, datacleaning and visualization of information.</p>
-    <ul class="network-icon" aria-hidden="true">
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="/#contact" >
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://twitter.com/dannymawani" target="_blank" rel="noopener">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://github.com/dannymawani" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      
-    </ul>
-  </div>
-</div>
 
 
 

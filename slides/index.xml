@@ -12,15 +12,14 @@
     
     
     <item>
-      <title>Slides</title>
-      <link>/slides/example-slides/</link>
+      <title></title>
+      <link>/slides/mccph19/presentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/slides/example-slides/</guid>
-      <description>Welcome to Slides Academic
-Features  Efficiently write slides in Markdown 3-in-1: Create, Present, and Publish your slides Supports speaker notes Mobile friendly slides  Controls  Next: Right Arrow or Space Previous: Left Arrow Start: Home Finish: End Overview: Esc Speaker notes: S Fullscreen: F Zoom: Alt + Click PDF Export: E  Code Highlighting Inline code: variable
-Code block:
-porridge = &amp;quot;blueberry&amp;quot; if porridge == &amp;quot;blueberry&amp;quot;: print(&amp;quot;Eating...&amp;quot;)  Math In-line math: $x + y = z$</description>
+      <guid>/slides/mccph19/presentation/</guid>
+      <description>Measurecamp 2019 - CPHCreating datapipelines with R
+By Danny Mawani Holmgaard
+AgendaAbout my journeyStuff I am still figuring outLearn to grab different types of dataConnect Github and Cloud StorageUse R in the GCPExtract Transform and Load data into BigQueryMy journeyWhat I doWorked with Digital Analytics for 5 yearsLead Analyst @ IMPACT EXTENDResponsible for all data pipelinesMoving from digital analytics to data engineeringPrimarily use R and GCPOur teamStuff I am currently trying to get better at usingUsing Python and SQL instead of using R for everythingUtilizing DockerSet up plumber API’s to make my life easierDeploying shinyapps to GCP with authenticationWhat i am trying to say is that there is a lot to grasp and that it takes time to optimize your workflowBut now, lets get to the place where we can get to do some cool stuff!</description>
     </item>
     
   </channel>

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DMH Consulting on DMH Consulting</title>
@@ -7,8 +6,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Danny Mawani Holmgaard 2019</copyright>
-    <lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Jun 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>R on the Google Cloud Platform - Scheduling tasks</title>
+      <link>/talk/r-on-google-cloud-platform/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/r-on-google-cloud-platform/</guid>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 80.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;http://rpubs.com/dannymawani/mc2019cph&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Creating a workflow with measurement protocol and R</title>
@@ -18,29 +29,8 @@
       <guid>/post/measurement-protocol-usecases/</guid>
       <description>
 
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;nav id=&#34;TableOfContents&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#how-the-measurement-protcol-works&#34;&gt;How the measurement protcol works&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#usecases&#34;&gt;Usecases&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#uploading-refunds&#34;&gt;Uploading refunds&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#uploading-transactions&#34;&gt;Uploading transactions&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#words-of-caution&#34;&gt;words of caution&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#1-create-filters-to-block-views&#34;&gt;1. Create filters to block views&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#2-remove-the-exclude-all-hits-from-known-bots-and-spiders-checkmark&#34;&gt;2. Remove the &amp;ldquo;Exclude all hits from known bots and spiders&amp;rdquo; checkmark&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#3-latency&#34;&gt;3. Latency&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#conlusion&#34;&gt;conlusion&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/nav&gt;
-
+&lt;p&gt;&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;/p&gt;
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 
@@ -254,23 +244,8 @@ df &amp;lt;- sfData[sfData$ti %in% list1, ]
       <guid>/post/pull-data-from-multiple-ga-properties/</guid>
       <description>
 
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;nav id=&#34;TableOfContents&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#background&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#usecase&#34;&gt;Usecase&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#the-code&#34;&gt;The code&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#1-connect-to-google-analytics&#34;&gt;1. Connect To Google Analytics&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#2-setting-up-the-script-to-pull-from-multiple-properties&#34;&gt;2. Setting up the script to pull from multiple properties&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/nav&gt;
-
+&lt;p&gt;&lt;h2&gt;Table of Contents&lt;/h2&gt;
+HAHAHUGOSHORTCODE-TOC0-HBHB&lt;/p&gt;
 
 &lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
 
@@ -302,11 +277,11 @@ googleAnalyticsR::ga_auth()
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    &lt;p&gt;Remember to authenticate with the account you want access to&lt;/p&gt;
+    
+Remember to authenticate with the account you want access to
 
   &lt;/div&gt;
 &lt;/div&gt;
-
 
 &lt;h3 id=&#34;2-setting-up-the-script-to-pull-from-multiple-properties&#34;&gt;2. Setting up the script to pull from multiple properties&lt;/h3&gt;
 
@@ -379,26 +354,8 @@ upload &amp;lt;- rbind(upload,data)
       <guid>/post/source-r-with-github/</guid>
       <description>
 
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;nav id=&#34;TableOfContents&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#background&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#why-is-sourcing-from-github-smart&#34;&gt;Why is sourcing from github smart?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#the-how-to-part&#34;&gt;The how-to part&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#1-setting-up-a-github-account&#34;&gt;1. Setting up a github account&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#2-creating-a-bucket-in-google-cloud-storage&#34;&gt;2. Creating a bucket in Google Cloud Storage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#3-creating-a-trigger-with-cloud-build&#34;&gt;3. Creating a trigger with Cloud Build&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#4-setting-up-the-yalm&#34;&gt;4. Setting up the YALM&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#5-sourcing-scripts-from-cloud-storage&#34;&gt;5. Sourcing scripts from Cloud Storage&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#thoughts-and-conclusion&#34;&gt;Thoughts and conclusion&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/nav&gt;
-
+&lt;p&gt;&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;/p&gt;
 
 &lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
 
@@ -603,6 +560,317 @@ googleCloudStorageR::gcs_source(&#39;yoursubfolderifyouhaveone/yourscript.R&#39;
       
       <guid>/privacy/</guid>
       <description>&lt;p&gt;This site only uses Google Analytics to show user statistics. No personal information is tracked.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides/mccph19/presentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides/mccph19/presentation/</guid>
+      <description>
+
+
+&lt;div id=&#34;measurecamp-2019---cph&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Measurecamp 2019 - CPH&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Creating datapipelines with R&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;By Danny Mawani Holmgaard&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;agenda&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Agenda&lt;/h2&gt;
+&lt;div class=&#34;left&#34;&gt;
+&lt;blockquote&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;About my journey&lt;/li&gt;
+&lt;li&gt;Stuff I am still figuring out&lt;/li&gt;
+&lt;li&gt;Learn to grab different types of data&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&#34;right&#34;&gt;
+&lt;blockquote&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Connect &lt;strong&gt;Github&lt;/strong&gt; and &lt;strong&gt;Cloud Storage&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;R&lt;/strong&gt; in the &lt;strong&gt;GCP&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Extract Transform and Load data into BigQuery&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;my-journey&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;My journey&lt;/h1&gt;
+&lt;div id=&#34;what-i-do&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;What I do&lt;/h2&gt;
+&lt;div class=&#34;left&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;Worked with Digital Analytics for 5 years&lt;/li&gt;
+&lt;li&gt;Lead Analyst @ IMPACT EXTEND&lt;/li&gt;
+&lt;li&gt;Responsible for all data pipelines&lt;/li&gt;
+&lt;li&gt;Moving from digital analytics to data engineering&lt;/li&gt;
+&lt;li&gt;Primarily use R and GCP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;right&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;superweek.jpg&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;our-team&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Our team&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;workstuff.png&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;stuff-i-am-currently-trying-to-get-better-at-using&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Stuff I am currently trying to get better at using&lt;/h2&gt;
+&lt;div class=&#34;left&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;Using Python and SQL instead of using R for everything&lt;/li&gt;
+&lt;li&gt;Utilizing Docker&lt;/li&gt;
+&lt;li&gt;Set up plumber API’s to make my life easier&lt;/li&gt;
+&lt;li&gt;Deploying shinyapps to GCP with authentication&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;right&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;docker.png&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;what-i-am-trying-to-say-is-that-there-is-a-lot-to-grasp-and-that-it-takes-time-to-optimize-your-workflow&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;What i am trying to say is that there is a lot to grasp and that it takes time to optimize your workflow&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;but-now-lets-get-to-the-place-where-we-can-get-to-do-some-cool-stuff&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;But now, lets get to the place where we can get to do some cool stuff!&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;grabbing-different-types-of-data&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Grabbing different types of data&lt;/h1&gt;
+&lt;div id=&#34;sql-servers&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;SQL Servers&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#load libraries
+#library(tidyverse)
+#library(dbi)
+#library(odbc)
+
+#set up connection object
+con &amp;lt;- DBI::dbConnect(odbc::odbc(),
+                      Driver    = &amp;quot;SQL Server&amp;quot;, 
+                      Server    = &amp;quot;yourserver.database.windows.net&amp;quot;,
+                      Database  = &amp;quot;databasename&amp;quot;,
+                      UID       = &amp;quot;userid&amp;quot;,
+                      PWD       = &amp;quot;password&amp;quot;,
+                      Port      = 1234)
+
+#extract data
+dataset &amp;lt;- as_tibble(
+  tbl(con, &amp;quot;dataset&amp;quot;)%&amp;gt;%
+  head(100) #Get the first 100 rows
+  ) &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ftp-servers&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;FTP Servers&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#library(RCurl)
+syntax &amp;lt;- &amp;quot;ftp://&amp;quot;
+ftpHost &amp;lt;- &amp;quot;ftp.yourserver.com.com&amp;quot;
+ftpUser &amp;lt;- &amp;quot;username&amp;quot;
+ftpPass &amp;lt;- &amp;quot;password&amp;quot;
+folder &amp;lt;- &amp;quot;/folder/&amp;quot; #delete folder if in root
+ftpURL &amp;lt;- paste(syntax,ftpHost,folder,sep = &amp;quot;&amp;quot;)
+
+#Download files function
+
+download &amp;lt;- function(file){
+  fileDownload &amp;lt;- file
+  downloadFtpUrl &amp;lt;- paste(ftpURL,fileDownload, sep = &amp;quot;&amp;quot;)
+  downloadFtpUrlCredentials &amp;lt;- paste(ftpUser,&amp;quot;:&amp;quot;,ftpPass, sep = &amp;quot;&amp;quot;)
+  bin &amp;lt;- getBinaryURL(downloadFtpUrl,userpwd=downloadFtpUrlCredentials)
+  con &amp;lt;- file(fileDownload, open = &amp;quot;wb&amp;quot;)
+  writeBin(bin, con)
+  close(con)}
+
+#Download files
+
+download(&amp;quot;yourfile.csv&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;postgress-database&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;postgress database&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#library(&amp;#39;RPostgreSQL&amp;#39;)
+
+#create connection object
+con &amp;lt;- dbConnect(drv =&amp;quot;RPostgreSQL&amp;quot;, 
+                 user=&amp;quot;&amp;quot;, 
+                 password=&amp;quot;&amp;quot;,
+                 host=&amp;quot;&amp;quot;, 
+                 port=1234, 
+                 dbname=&amp;quot;&amp;quot;)
+
+#extract data
+dataset &amp;lt;- as_tibble(
+  tbl(con, &amp;quot;dataset&amp;quot;)%&amp;gt;%
+  head(100) #Get the first 100 rows
+  ) &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;google-analytics&#34; class=&#34;section level2&#34; data-background-iframe=&#34;https://code.markedmondson.me/googleAnalyticsR/articles/setup.html&#34;&gt;
+&lt;h2&gt;Google Analytics&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;facebook-and-instagram&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Facebook and Instagram&lt;/h2&gt;
+&lt;div class=&#34;left&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;It is &lt;strong&gt;REALLY&lt;/strong&gt; difficult to download Facebook and instagram data&lt;/li&gt;
+&lt;li&gt;Therefore you should seek a third party vendor should you need to get datasources that doesnt have easy to access API’s&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;right&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;Remember, maintaining API work can require a lof of work and could potentially break whereas a vendor are living of maintaining these tools and have the right types of access
+&lt;img src=&#34;stitch.png&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;connect-github-and-cloud-storage-to-your-work&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Connect Github and Cloud storage to your work&lt;/h1&gt;
+&lt;div id=&#34;github&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Github&lt;/h2&gt;
+&lt;div class=&#34;left&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;Github is the closest thing you get to a “dropbox” for your code.&lt;/li&gt;
+&lt;li&gt;It allows version control and makes sure that your code is always updated&lt;/li&gt;
+&lt;li&gt;From github, you can push you code into other systems and work on the same projects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;right&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;github.jpg&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cloud-storage&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Cloud Storage&lt;/h2&gt;
+&lt;div class=&#34;left&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;Cloud storage lets you upload and pull files in a secure environment&lt;/li&gt;
+&lt;li&gt;It has great API’s and can sync directly with bigQuery&lt;/li&gt;
+&lt;li&gt;Thanks to Mark Edmonson, we can also source R code directly from there&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;right&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;cloudstorage.png&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;setting-up-the-configuration&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Setting up the configuration&lt;/h2&gt;
+&lt;div class=&#34;left&#34;&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Set up Github and put you code there&lt;/li&gt;
+&lt;li&gt;Create a bucket in Cloud Storage&lt;/li&gt;
+&lt;li&gt;Create a trigger with cloudbuild where you link to the repo&lt;/li&gt;
+&lt;li&gt;Add cloudbuild.yalm to the folder&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&#34;right&#34;&gt;
+&lt;pre class=&#34;javascript&#34;&gt;&lt;code&gt;steps:
+  - name: gcr.io/cloud-builders/gsutil
+    args: [&amp;quot;-m&amp;quot;, &amp;quot;rsync&amp;quot;, &amp;quot;-r&amp;quot;, &amp;quot;-c&amp;quot;, &amp;quot;-d&amp;quot;, &amp;quot;.&amp;quot;, &amp;quot;gs://yourfolderincloudstorage/ifneededthencreateasubfolder&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sourcing-from-cloud-storage&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Sourcing from Cloud Storage&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#install.package(&amp;quot;googleCloudStorageR&amp;quot;) if you have not installed it yet
+
+#load the library
+library(googleCloudStorageR)
+
+#Authenticate
+gcs_auth()
+
+googleCloudStorageR::gcs_source(&amp;#39;yoursubfolderifyouhaveone/yourscript.R&amp;#39;, bucket = &amp;#39;yourcreatedbucket&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;use-r-studio-in-the-google-cloud-platform&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Use R studio in the Google Cloud Platform&lt;/h1&gt;
+&lt;div id=&#34;set-up-billing&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1. Set up billing&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;thank-mark-that-he-build-a-script-that-does-everything-for-you&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;2. Thank Mark that he build a script that does everything for you&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# You need to authenticate with your GCP account before being able to do it
+gce_vm(&amp;quot;yourmachinename&amp;quot;, project =&amp;quot;gar-creds-185213&amp;quot;, zone = &amp;quot;europe-west1-b&amp;quot;,
+       predefined_type = &amp;quot;g1-small&amp;quot;,
+       template = &amp;quot;rstudio&amp;quot;, 
+       username = &amp;quot;username&amp;quot;, 
+       password = &amp;quot;password&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-easy-way-to-run-scripts-automatically-from-gcs&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The easy way to run scripts automatically from GCS&lt;/h2&gt;
+&lt;div class=&#34;left&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;rstudiogcp.png&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;right&#34;&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#set machine to be launched
+library(googleComputeEngineR)
+library(googleCloudStorageR)
+library(googleAuthR)
+
+gar_auth(&amp;quot;/home/username/.httr-oauth&amp;quot;)
+
+GCE_AUTH_FILE=&amp;quot;/home/username/auth.json&amp;quot;
+GCE_DEFAULT_PROJECT_ID=&amp;quot;projectname&amp;quot;
+GCE_DEFAULT_ZONE=&amp;quot;europe-west1-b&amp;quot;
+gcs_global_bucket(&amp;quot;bucketname&amp;quot;)
+BQ_AUTH_FILE=&amp;quot;/home/username/bq.oauth&amp;quot;
+
+vm &amp;lt;- gce_vm(&amp;quot;yourvirtualmachine&amp;quot;)
+
+vm &amp;lt;- gce_ssh_setup(vm,
+                    username = &amp;quot;username&amp;quot;,
+                    key.pub = &amp;quot;/home/username/.ssh/id_rsa.pub&amp;quot;,
+                    key.private = &amp;quot;/home/username/.ssh/id_rsa&amp;quot;)
+
+runme &amp;lt;- &amp;quot;Rscript -e \&amp;quot;googleAuthR::gar_gce_auth();googleCloudStorageR::gcs_source(&amp;#39;cloudstoragefolder/script.r&amp;#39;, bucket = &amp;#39;bucket&amp;#39;)\&amp;quot;&amp;quot;
+docker_cmd(vm, 
+           cmd = &amp;quot;exec&amp;quot;, 
+           args = c(&amp;quot;rstudio&amp;quot;, runme), 
+           wait = TRUE,
+           capture_text = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;automating-the-script-to-run-at-a-specific-time&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Automating the script to run at a specific time&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Remember - your if you turn of the machine, the cronjob settings will stop working&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;cronjobs.png&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sending-data-to-bigquery&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Sending data to bigQuery&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#library(bigQueryR)
+
+# First Create the dataset
+
+# bqr_create_table(projectId = &amp;quot;your project id&amp;quot;,
+#                  datasetId = &amp;quot;dataset&amp;quot;, &amp;quot;your table&amp;quot;, your dataframe,
+#                  timePartitioning = FALSE, expirationMs = 0L)
+
+bqr_upload_data(projectId = &amp;quot;your project id&amp;quot;,
+                datasetId = &amp;quot;dataset&amp;quot;, &amp;quot;your table&amp;quot;, yourdataframe,
+                overwrite = FALSE, #True to overwrite your table
+                wait = TRUE, autodetect = FALSE,
+                maxBadRecords = 1000)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;final-thoughts&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Final thoughts&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;This is not the most stable way to do things, but the easiest&lt;/li&gt;
+&lt;li&gt;There is so many ways you can work with making your data flow&lt;/li&gt;
+&lt;li&gt;Start small and build your way up from there&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div id=&#34;questions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Questions?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;citation&#34;&gt;@dannymawani&lt;/span&gt; (Twitter / Linkedin)&lt;/li&gt;
+&lt;li&gt;www.mawani.dk&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;mailto:dmo@impact.dk&#34; class=&#34;email&#34;&gt;dmo@impact.dk&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     

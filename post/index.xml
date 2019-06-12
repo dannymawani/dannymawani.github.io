@@ -18,7 +18,7 @@
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/measurement-protocol-usecases/</guid>
-      <description>Table of Contents    Introduction How the measurement protcol works Usecases  Uploading refunds Uploading transactions  words of caution  1. Create filters to block views 2. Remove the &amp;ldquo;Exclude all hits from known bots and spiders&amp;rdquo; checkmark 3. Latency  conlusion    Introduction This blogpost was inspired by a release to a website which had some last minute changed that when the site when live, caused a javaScript error that blocked the ecommerce transaction data to not populate.</description>
+      <description>This is a simple how-to guide on doing basic things with measurement protocol</description>
     </item>
     
     <item>
@@ -27,9 +27,7 @@
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/detect-missing-data-with-r-a-google-analytics-example/</guid>
-      <description>Introduction This post is based on a project where we needed to see how many transactions we were actually missing in Google Analytics.
-The how to This process is quite simple, we will be pulling out transaction id&amp;rsquo;s and then make it into a list. After that we compare that list with another
-ga_id &amp;lt;- &amp;quot;yourgaid&amp;quot; data &amp;lt;- google_analytics(ga_id, date_range = c(&amp;quot;2019-01-23&amp;quot;, &amp;quot;2019-02-13&amp;quot;), metrics = &amp;quot;users&amp;quot;, dimensions = c(&amp;quot;transactionId&amp;quot;), max = -1) #Your transaction ids rowa &amp;lt;- as.</description>
+      <description>How to compare data from GA to another dataset to see if there are any discrepencies</description>
     </item>
     
     <item>
@@ -38,8 +36,7 @@ ga_id &amp;lt;- &amp;quot;yourgaid&amp;quot; data &amp;lt;- google_analytics(ga_
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/pull-data-from-multiple-ga-properties/</guid>
-      <description>Table of Contents    Background Usecase The code  1. Connect To Google Analytics 2. Setting up the script to pull from multiple properties  Conclusion    Background Being in an agency, we often have to do benchmarks, reports etc. that require us to pull data from multiple Google Analytics properties.
-Usecase One of our client have multiple properties each containing 3 business units, a B2B, B2C and B2G (Business to government).</description>
+      <description>Benchmarking your data can be rough. In this post we go through how to pull data from multiple GA accounts</description>
     </item>
     
     <item>
@@ -48,7 +45,7 @@ Usecase One of our client have multiple properties each containing 3 business un
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/source-r-with-github/</guid>
-      <description>Table of Contents    Background Why is sourcing from github smart? The how-to part  1. Setting up a github account 2. Creating a bucket in Google Cloud Storage 3. Creating a trigger with Cloud Build 4. Setting up the YALM 5. Sourcing scripts from Cloud Storage  Thoughts and conclusion    Background In my company, we have gone from 1 person working with adhoc assignment with R, to 4 persons within the last year.</description>
+      <description>Making changes to your pipelines can be rough if you are multiple people working on the same project. This guide shows you how to use Github to make it easier</description>
     </item>
     
   </channel>
