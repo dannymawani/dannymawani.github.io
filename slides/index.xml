@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Slides on DMH Consulting</title>
-    <link>/slides/</link>
+    <link>http://dannymawani.github.io/slides/</link>
     <description>Recent content in Slides on DMH Consulting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Danny Mawani Holmgaard 2019</copyright>
     
-	<atom:link href="/slides/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://dannymawani.github.io/slides/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>/slides/mccph19/presentation/</link>
+      <link>http://dannymawani.github.io/slides/mccph19/presentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/slides/mccph19/presentation/</guid>
+      <guid>http://dannymawani.github.io/slides/mccph19/presentation/</guid>
       <description>Measurecamp 2019 - CPHCreating datapipelines with R
 By Danny Mawani Holmgaard
 AgendaAbout my journeyStuff I am still figuring outLearn to grab different types of dataConnect Github and Cloud StorageUse R in the GCPExtract Transform and Load data into BigQueryMy journeyWhat I doWorked with Digital Analytics for 5 yearsLead Analyst @ IMPACT EXTENDResponsible for all data pipelinesMoving from digital analytics to data engineeringPrimarily use R and GCPOur teamStuff I am currently trying to get better at usingUsing Python and SQL instead of using R for everythingUtilizing DockerSet up plumber API’s to make my life easierDeploying shinyapps to GCP with authenticationWhat i am trying to say is that there is a lot to grasp and that it takes time to optimize your workflowBut now, lets get to the place where we can get to do some cool stuff!</description>

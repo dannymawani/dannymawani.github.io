@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Current blog posts on DMH Consulting</title>
-    <link>/post/</link>
+    <link>http://dannymawani.github.io/post/</link>
     <description>Recent content in Current blog posts on DMH Consulting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Danny Mawani Holmgaard 2019</copyright>
     <lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://dannymawani.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Creating a workflow with measurement protocol and R</title>
-      <link>/post/measurement-protocol-usecases/</link>
+      <link>http://dannymawani.github.io/post/measurement-protocol-usecases/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/measurement-protocol-usecases/</guid>
+      <guid>http://dannymawani.github.io/post/measurement-protocol-usecases/</guid>
       <description>This is a simple how-to guide on doing basic things with measurement protocol</description>
     </item>
     
     <item>
       <title>Detect missing data in GA with R</title>
-      <link>/post/detect-missing-data-with-r-a-google-analytics-example/</link>
+      <link>http://dannymawani.github.io/post/detect-missing-data-with-r-a-google-analytics-example/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/detect-missing-data-with-r-a-google-analytics-example/</guid>
+      <guid>http://dannymawani.github.io/post/detect-missing-data-with-r-a-google-analytics-example/</guid>
       <description>How to compare data from GA to another dataset to see if there are any discrepencies</description>
     </item>
     
     <item>
       <title>Pull data from multiple Google Analytics Properties with R</title>
-      <link>/post/pull-data-from-multiple-ga-properties/</link>
+      <link>http://dannymawani.github.io/post/pull-data-from-multiple-ga-properties/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/pull-data-from-multiple-ga-properties/</guid>
+      <guid>http://dannymawani.github.io/post/pull-data-from-multiple-ga-properties/</guid>
       <description>Benchmarking your data can be rough. In this post we go through how to pull data from multiple GA accounts</description>
     </item>
     
     <item>
       <title>Source R scripts from github through Google Cloud Storage</title>
-      <link>/post/source-r-with-github/</link>
+      <link>http://dannymawani.github.io/post/source-r-with-github/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/source-r-with-github/</guid>
+      <guid>http://dannymawani.github.io/post/source-r-with-github/</guid>
       <description>Making changes to your pipelines can be rough if you are multiple people working on the same project. This guide shows you how to use Github to make it easier</description>
     </item>
     

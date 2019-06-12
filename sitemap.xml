@@ -3,7 +3,7 @@
     
     <url>
     
-      <loc>/</loc>
+      <loc>http://dannymawani.github.io/</loc>
       <lastmod>2019-06-08T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -12,7 +12,7 @@
     
     <url>
     
-      <loc>/talk/r-on-google-cloud-platform/</loc>
+      <loc>http://dannymawani.github.io/talk/r-on-google-cloud-platform/</loc>
       <lastmod>2019-06-08T00:00:00+00:00</lastmod>
     </url>
     
@@ -20,7 +20,7 @@
     
     <url>
     
-      <loc>/talk/</loc>
+      <loc>http://dannymawani.github.io/talk/</loc>
       <lastmod>2019-06-08T00:00:00+00:00</lastmod>
     </url>
     
@@ -28,7 +28,7 @@
     
     <url>
     
-      <loc>/post/measurement-protocol-usecases/</loc>
+      <loc>http://dannymawani.github.io/post/measurement-protocol-usecases/</loc>
       <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -36,7 +36,7 @@
     
     <url>
     
-      <loc>/post/</loc>
+      <loc>http://dannymawani.github.io/post/</loc>
       <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -44,7 +44,7 @@
     
     <url>
     
-      <loc>/post/detect-missing-data-with-r-a-google-analytics-example/</loc>
+      <loc>http://dannymawani.github.io/post/detect-missing-data-with-r-a-google-analytics-example/</loc>
       <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -52,7 +52,7 @@
     
     <url>
     
-      <loc>/post/pull-data-from-multiple-ga-properties/</loc>
+      <loc>http://dannymawani.github.io/post/pull-data-from-multiple-ga-properties/</loc>
       <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -60,7 +60,7 @@
     
     <url>
     
-      <loc>/post/source-r-with-github/</loc>
+      <loc>http://dannymawani.github.io/post/source-r-with-github/</loc>
       <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -68,7 +68,7 @@
     
     <url>
     
-      <loc>/talk/superweek-2019/</loc>
+      <loc>http://dannymawani.github.io/talk/superweek-2019/</loc>
       <lastmod>2019-02-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -76,7 +76,7 @@
     
     <url>
     
-      <loc>/talk/blackfriday/</loc>
+      <loc>http://dannymawani.github.io/talk/blackfriday/</loc>
       <lastmod>2018-12-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -84,7 +84,7 @@
     
     <url>
     
-      <loc>/talk/ip-anonymization-while-excluding-internal-trafic/</loc>
+      <loc>http://dannymawani.github.io/talk/ip-anonymization-while-excluding-internal-trafic/</loc>
       <lastmod>2018-12-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -92,7 +92,7 @@
     
     <url>
     
-      <loc>/talk/r-introduction-class-measurecamp/</loc>
+      <loc>http://dannymawani.github.io/talk/r-introduction-class-measurecamp/</loc>
       <lastmod>2018-12-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -100,7 +100,7 @@
     
     <url>
     
-      <loc>/talk/gdpr-with-google-tag-manager/</loc>
+      <loc>http://dannymawani.github.io/talk/gdpr-with-google-tag-manager/</loc>
       <lastmod>2018-12-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -108,7 +108,7 @@
     
     <url>
     
-      <loc>/privacy/</loc>
+      <loc>http://dannymawani.github.io/privacy/</loc>
       <lastmod>2018-06-28T00:00:00+02:00</lastmod>
     </url>
     
@@ -116,21 +116,21 @@
     
     <url>
     
-      <loc>/author/admin/</loc>
+      <loc>http://dannymawani.github.io/author/admin/</loc>
     </url>
     
   
     
     <url>
     
-      <loc>/slides/mccph19/presentation/</loc>
+      <loc>http://dannymawani.github.io/slides/mccph19/presentation/</loc>
     </url>
     
   
     
     <url>
     
-      <loc>/authors/</loc>
+      <loc>http://dannymawani.github.io/authors/</loc>
       <priority>0</priority>
     </url>
     
@@ -138,7 +138,7 @@
     
     <url>
     
-      <loc>/author/</loc>
+      <loc>http://dannymawani.github.io/author/</loc>
       <priority>0</priority>
     </url>
     
@@ -146,7 +146,7 @@
     
     <url>
     
-      <loc>/categories/</loc>
+      <loc>http://dannymawani.github.io/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -154,7 +154,7 @@
     
     <url>
     
-      <loc>/publication_types/</loc>
+      <loc>http://dannymawani.github.io/publication_types/</loc>
       <priority>0</priority>
     </url>
     
@@ -162,7 +162,7 @@
     
     <url>
     
-      <loc>/slides/</loc>
+      <loc>http://dannymawani.github.io/slides/</loc>
       <priority>0</priority>
     </url>
     
@@ -170,7 +170,7 @@
     
     <url>
     
-      <loc>/tags/</loc>
+      <loc>http://dannymawani.github.io/tags/</loc>
       <priority>0</priority>
     </url>
     
@@ -178,7 +178,7 @@
     
     <url>
     
-      <loc>/authors/admin/</loc>
+      <loc>http://dannymawani.github.io/authors/admin/</loc>
       <priority>0</priority>
     </url>
     

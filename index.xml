@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DMH Consulting on DMH Consulting</title>
-    <link>/</link>
+    <link>http://dannymawani.github.io/</link>
     <description>Recent content in DMH Consulting on DMH Consulting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,22 +11,20 @@
     
     <item>
       <title>R on the Google Cloud Platform - Scheduling tasks</title>
-      <link>/talk/r-on-google-cloud-platform/</link>
+      <link>http://dannymawani.github.io/talk/r-on-google-cloud-platform/</link>
       <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/talk/r-on-google-cloud-platform/</guid>
-      <description>&lt;div style=&#34;position: relative; padding-bottom: 80.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;http://rpubs.com/dannymawani/mc2019cph&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
- &lt;/div&gt;
+      <guid>http://dannymawani.github.io/talk/r-on-google-cloud-platform/</guid>
+      <description>&lt;p&gt;&lt;iframe src=&#34;http://rpubs.com/dannymawani/mc2019cph&#34; style=&#34;position: absolute; top: 75%; left: 0; width: 100%; height: 100%; border:0;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Creating a workflow with measurement protocol and R</title>
-      <link>/post/measurement-protocol-usecases/</link>
+      <link>http://dannymawani.github.io/post/measurement-protocol-usecases/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/measurement-protocol-usecases/</guid>
+      <guid>http://dannymawani.github.io/post/measurement-protocol-usecases/</guid>
       <description>
 
 &lt;p&gt;&lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -77,7 +75,7 @@
 
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/transaction_example.png&#34; /&gt;
+&lt;img src=&#34;http://dannymawani.github.io/img/transaction_example.png&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -190,10 +188,10 @@ for(i in 1:nrow(yourDataframe)) {
     
     <item>
       <title>Detect missing data in GA with R</title>
-      <link>/post/detect-missing-data-with-r-a-google-analytics-example/</link>
+      <link>http://dannymawani.github.io/post/detect-missing-data-with-r-a-google-analytics-example/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/detect-missing-data-with-r-a-google-analytics-example/</guid>
+      <guid>http://dannymawani.github.io/post/detect-missing-data-with-r-a-google-analytics-example/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -238,10 +236,10 @@ df &amp;lt;- sfData[sfData$ti %in% list1, ]
     
     <item>
       <title>Pull data from multiple Google Analytics Properties with R</title>
-      <link>/post/pull-data-from-multiple-ga-properties/</link>
+      <link>http://dannymawani.github.io/post/pull-data-from-multiple-ga-properties/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/pull-data-from-multiple-ga-properties/</guid>
+      <guid>http://dannymawani.github.io/post/pull-data-from-multiple-ga-properties/</guid>
       <description>
 
 &lt;p&gt;&lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -348,10 +346,10 @@ upload &amp;lt;- rbind(upload,data)
     
     <item>
       <title>Source R scripts from github through Google Cloud Storage</title>
-      <link>/post/source-r-with-github/</link>
+      <link>http://dannymawani.github.io/post/source-r-with-github/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/source-r-with-github/</guid>
+      <guid>http://dannymawani.github.io/post/source-r-with-github/</guid>
       <description>
 
 &lt;p&gt;&lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -397,7 +395,7 @@ upload &amp;lt;- rbind(upload,data)
 
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/githubFrontpage_githubR.png&#34; /&gt;
+&lt;img src=&#34;http://dannymawani.github.io/img/githubFrontpage_githubR.png&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -411,7 +409,7 @@ upload &amp;lt;- rbind(upload,data)
 
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/createRepositories_githubR.png&#34; /&gt;
+&lt;img src=&#34;http://dannymawani.github.io/img/createRepositories_githubR.png&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -430,7 +428,7 @@ upload &amp;lt;- rbind(upload,data)
 
 &lt;figure&gt;
 
-&lt;img src=&#34;/img/createBucket_githubR.png&#34; /&gt;
+&lt;img src=&#34;http://dannymawani.github.io/img/createBucket_githubR.png&#34; /&gt;
 
 
 &lt;/figure&gt;&lt;/li&gt;
@@ -493,20 +491,20 @@ googleCloudStorageR::gcs_source(&#39;yoursubfolderifyouhaveone/yourscript.R&#39;
     
     <item>
       <title>Superweek 2019</title>
-      <link>/talk/superweek-2019/</link>
+      <link>http://dannymawani.github.io/talk/superweek-2019/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/talk/superweek-2019/</guid>
+      <guid>http://dannymawani.github.io/talk/superweek-2019/</guid>
       <description>&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/28qsnfrw9J3zHF&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/superweek2019-dmo-presentation&#34; title=&#34;Superweek2019 dmo presentation&#34; target=&#34;_blank&#34;&gt;Superweek2019 dmo presentation&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Black friday seminar</title>
-      <link>/talk/blackfriday/</link>
+      <link>http://dannymawani.github.io/talk/blackfriday/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/talk/blackfriday/</guid>
+      <guid>http://dannymawani.github.io/talk/blackfriday/</guid>
       <description>&lt;p&gt;This talk is in danish.&lt;/p&gt;
 
 
@@ -519,10 +517,10 @@ googleCloudStorageR::gcs_source(&#39;yoursubfolderifyouhaveone/yourscript.R&#39;
     
     <item>
       <title>How to anonymize IP adresses and still be able to exclude internal traffic</title>
-      <link>/talk/ip-anonymization-while-excluding-internal-trafic/</link>
+      <link>http://dannymawani.github.io/talk/ip-anonymization-while-excluding-internal-trafic/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/talk/ip-anonymization-while-excluding-internal-trafic/</guid>
+      <guid>http://dannymawani.github.io/talk/ip-anonymization-while-excluding-internal-trafic/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://analytics.mawani.dk/excluding-internal-traffic-anonymizing-ip-adresses-google-analytics/&#34;&gt;Original Link&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/6Vr0jPcBgPD6dd&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/anonymization-of-ip-adresses-with-google-tag-manager&#34; title=&#34;Anonymization of IP adresses with Google Tag Manager&#34; target=&#34;_blank&#34;&gt;Anonymization of IP adresses with Google Tag Manager&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
@@ -531,10 +529,10 @@ googleCloudStorageR::gcs_source(&#39;yoursubfolderifyouhaveone/yourscript.R&#39;
     
     <item>
       <title>R introduction class for measurecamp</title>
-      <link>/talk/r-introduction-class-measurecamp/</link>
+      <link>http://dannymawani.github.io/talk/r-introduction-class-measurecamp/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/talk/r-introduction-class-measurecamp/</guid>
+      <guid>http://dannymawani.github.io/talk/r-introduction-class-measurecamp/</guid>
       <description>&lt;p&gt;&lt;strong&gt;the slides&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/uz2aLKQKZ2CSiB&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/rclass&#34; title=&#34;Rclass&#34; target=&#34;_blank&#34;&gt;Rclass&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
@@ -545,30 +543,30 @@ googleCloudStorageR::gcs_source(&#39;yoursubfolderifyouhaveone/yourscript.R&#39;
     
     <item>
       <title>Respecting your users by setting Google Tag Manager up for GDPR </title>
-      <link>/talk/gdpr-with-google-tag-manager/</link>
+      <link>http://dannymawani.github.io/talk/gdpr-with-google-tag-manager/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/talk/gdpr-with-google-tag-manager/</guid>
+      <guid>http://dannymawani.github.io/talk/gdpr-with-google-tag-manager/</guid>
       <description>&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/8L7n7nX0ZUINKB&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/gdpr-within-google-tag-manager-measurecamp-2018&#34; title=&#34;GDPR within Google Tag Manager - Measurecamp 2018&#34; target=&#34;_blank&#34;&gt;GDPR within Google Tag Manager - Measurecamp 2018&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Privacy Policy</title>
-      <link>/privacy/</link>
+      <link>http://dannymawani.github.io/privacy/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0200</pubDate>
       
-      <guid>/privacy/</guid>
+      <guid>http://dannymawani.github.io/privacy/</guid>
       <description>&lt;p&gt;This site only uses Google Analytics to show user statistics. No personal information is tracked.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title></title>
-      <link>/slides/mccph19/presentation/</link>
+      <link>http://dannymawani.github.io/slides/mccph19/presentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/slides/mccph19/presentation/</guid>
+      <guid>http://dannymawani.github.io/slides/mccph19/presentation/</guid>
       <description>
 
 
