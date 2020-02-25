@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>analytics | DMH Analytics</title>
+    <link>/tags/analytics/</link>
+      <atom:link href="/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
+    <description>analytics</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>`©`Danny Mawani Holmgaard 2018</copyright><lastBuildDate>Sat, 01 Dec 2018 10:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>analytics</title>
+      <link>/tags/analytics/</link>
+    </image>
+    
+    <item>
+      <title>Black friday seminar</title>
+      <link>/talk/blackfriday/</link>
+      <pubDate>Sat, 01 Dec 2018 10:00:00 +0000</pubDate>
+      <guid>/talk/blackfriday/</guid>
+      <description>&lt;h1 id=&#34;se-videoen-her&#34;&gt;Se videoen her:&lt;/h1&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LNRdiEFOtMQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

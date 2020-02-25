@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>automation | DMH Analytics</title>
+    <link>/tags/automation/</link>
+      <atom:link href="/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <description>automation</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>`©`Danny Mawani Holmgaard 2018</copyright><lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>automation</title>
+      <link>/tags/automation/</link>
+    </image>
+    
+    <item>
+      <title>Superweek 2019 - A tale of automation in data engineering</title>
+      <link>/talk/r-on-google-cloud-platform/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/r-on-google-cloud-platform/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;the slides&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/28qsnfrw9J3zHF&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/superweek2019-dmo-presentation&#34; title=&#34;Superweek2019 dmo presentation&#34; target=&#34;_blank&#34;&gt;Superweek2019 dmo presentation&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

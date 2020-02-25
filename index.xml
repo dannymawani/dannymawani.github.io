@@ -1,208 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DMH Consulting on DMH Consulting</title>
-    <link>http://dannymawani.github.io/</link>
-    <description>Recent content in DMH Consulting on DMH Consulting</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Danny Mawani Holmgaard 2019</copyright>
-    <lastBuildDate>Sat, 08 Jun 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    <title>DMH Analytics</title>
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <description>DMH Analytics</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>`©`Danny Mawani Holmgaard 2018</copyright><lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>DMH Analytics</title>
+      <link>/</link>
+    </image>
     
     <item>
-      <title>R on the Google Cloud Platform - Scheduling tasks</title>
-      <link>http://dannymawani.github.io/talk/r-on-google-cloud-platform/</link>
-      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://dannymawani.github.io/talk/r-on-google-cloud-platform/</guid>
-      <description>&lt;p&gt;&lt;iframe src=&#34;http://rpubs.com/dannymawani/mc2019cph&#34; style=&#34;position: absolute; top: 75%; left: 0; width: 100%; height: 100%; border:0;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+      <title>Example Page 1</title>
+      <link>/hidden/courses/example/example1/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/hidden/courses/example/example1/</guid>
+      <description>&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
+&lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+&lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Creating a workflow with measurement protocol and R</title>
-      <link>http://dannymawani.github.io/post/measurement-protocol-usecases/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://dannymawani.github.io/post/measurement-protocol-usecases/</guid>
-      <description>
-
-&lt;p&gt;&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;This blogpost was inspired by a release to a website which had some last minute changed that when the site when live, caused a javaScript error that blocked the ecommerce transaction data to not populate.&lt;/p&gt;
-
-&lt;p&gt;With this error, the client lost 1800+ transactions to the site meaning that we had to upload these in the right currency format to make sure that all the data was still avaliable.&lt;/p&gt;
-
-&lt;h2 id=&#34;how-the-measurement-protcol-works&#34;&gt;How the measurement protcol works&lt;/h2&gt;
-
-&lt;p&gt;Whenever you visit a website, Google Analytic will collect information by sending a long list of query parameters to an endpoint, to which it is stored and modelled to show information in GA. Visiting this blogpost will for an example generate a network call similar to this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javaScript&#34;&gt;https://www.google-analytics.com/r/collect?v=1&amp;amp;_v=j73&amp;amp;a=1679354847&amp;amp;t=pageview&amp;amp;_s=1&amp;amp;dl=https%3A%2F%2Fwww.mawani.dk%2Fpost%2Fmeasurement-protocol-usecases%2F&amp;amp;ul=en-us&amp;amp;de=UTF-8&amp;amp;dt=Creating%20a%20workflow%20with%20measurement%20protocol%20and%20R%20%7C%20DMH%20Analytics&amp;amp;sd=24-bit&amp;amp;sr=1440x900&amp;amp;vp=1440x256&amp;amp;je=0&amp;amp;_u=QACAAAAB~&amp;amp;jid=651243071&amp;amp;gjid=1319476248&amp;amp;cid=1164110852.1529450664&amp;amp;tid=UA-134673438-1&amp;amp;_gid=106302445.1550868348&amp;amp;_r=1&amp;amp;gtm=2wg241WBTJ7HR&amp;amp;z=1265093896
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This will tell Google Analytics that:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The URL is this one&lt;/li&gt;
-&lt;li&gt;My browser language is en-us&lt;/li&gt;
-&lt;li&gt;what my device id is from the cookie so it can recognize me as a new or returning user&lt;/li&gt;
-&lt;li&gt;What tracking ID it should populate the data to&lt;/li&gt;
-&lt;li&gt;What my session ID is.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;What measurement protocol will do is to emulate the same types of parameters and have it populate the data in GA.&lt;/p&gt;
-
-&lt;p&gt;For a more detailed view on measurement protocol I would advise you to visit
-&lt;a href=&#34;https://www.optimizesmart.com/understanding-universal-analytics-measurement-protocol/&#34;&gt;Optimize Smart for their deepgoing description&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;usecases&#34;&gt;Usecases&lt;/h2&gt;
-
-&lt;p&gt;I have used measurement protocol for a various number of things. As you can send in all the supported information, this is a great area to explore in terms of improving your data collection. As for many of my other posts, I will be using another package created by &lt;a href=&#34;https://twitter.com/HoloMarkeD&#34;&gt;Mark Edmonson&lt;/a&gt; called &lt;a href=&#34;https://github.com/MarkEdmondson1234/googleMeasureR&#34;&gt;googleMeasureR&lt;/a&gt; to send the hits to Google Analytics, however you can easily transfer the way of doing this to any language of your choice such as Python, javaScript, PHP etc.&lt;/p&gt;
-
-&lt;h3 id=&#34;uploading-refunds&#34;&gt;Uploading refunds&lt;/h3&gt;
-
-&lt;p&gt;To upload refunds you first need a list of all the transactions that are missing. If you are on a site with multiple currencies it is also quite important that you can specify what unit that you are adding data to, so you are sure that it is populated correctly.&lt;/p&gt;
-
-&lt;p&gt;First thing that need to be done is to make sure that the data is loaded into R. I have chosen to rename the columns to the GA naming convention for measurement protocol, but it is not important:&lt;/p&gt;
-
-
-
-
-  
-
-&lt;figure&gt;
-
-&lt;img src=&#34;http://dannymawani.github.io/img/transaction_example.png&#34; /&gt;
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;Once that is made, we need to either have the client id (Google Analytics Cookie ID for identifying people), or create one yourself. This can be done by this code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
-#loading the library
-library(stringi)
-#the count of rows you need to upload
-n &amp;lt;- nrow(yourDataframe)
-
-#create the ids
-paste(&amp;quot;1.2.&amp;quot;,stri_rand_strings(n, 10, pattern = &amp;quot;[0-9]&amp;quot;),&amp;quot;.&amp;quot;,stri_rand_strings(n, 10, pattern = &amp;quot;[0-9]&amp;quot;), sep = &amp;quot;&amp;quot;)
-
-#output will look something like this if you print it out in the console
-
- [1] &amp;quot;1.2.6237558844.6715115260&amp;quot; &amp;quot;1.2.4893337628.0287915875&amp;quot; &amp;quot;1.2.1414860945.6106576917&amp;quot;
- [4] &amp;quot;1.2.8992586956.6450277842&amp;quot; &amp;quot;1.2.2032023475.7135641438&amp;quot; &amp;quot;1.2.1490282359.1139988407&amp;quot;
- [7] &amp;quot;1.2.7613957961.8692578524&amp;quot; &amp;quot;1.2.8481705025.8828767075&amp;quot; &amp;quot;1.2.1331455569.2063291053&amp;quot;
-[10] &amp;quot;1.2.9292335596.4531869013&amp;quot;
-
-### add it to the dataframe
-
-yourDataframe$cid &amp;lt;- paste(&amp;quot;1.2.&amp;quot;,stri_rand_strings(n, 10, pattern = &amp;quot;[0-9]&amp;quot;),&amp;quot;.&amp;quot;,stri_rand_strings(n, 10, pattern = &amp;quot;[0-9]&amp;quot;), sep = &amp;quot;&amp;quot;)
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now that a client id is added we are ready to push the refunds into Google Analytics:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
-####upload
-v &amp;lt;- 1 #version
-cs &amp;lt;- &amp;quot;measurementprotocol&amp;quot; #source
-cm &amp;lt;- &amp;quot;refund&amp;quot; #medium
-t &amp;lt;- &amp;quot;event&amp;quot; #type
-ec &amp;lt;- &amp;quot;Ecommerce&amp;quot; #event category
-ea &amp;lt;- &amp;quot;measurementProtocol&amp;quot; #event action
-el &amp;lt;- &amp;quot;refund&amp;quot; #event label
-tid &amp;lt;- &amp;quot;UA-1234567-1&amp;quot; #Google Analytics ID
-pa &amp;lt;- &amp;quot;refund&amp;quot; #product action
-ta &amp;lt;- &amp;quot;measurementprotocol&amp;quot; #transaction affiliation
-
-#for each row in the dataframe send a hit with measurement protocol
-for(i in 1:nrow(yourDataframe)) {
-  cid &amp;lt;- yourDataframe$cid[i]
-  ti &amp;lt;- yourDataframe$ti[i]
-  tr &amp;lt;- yourDataframe$tr[i]
-  cu &amp;lt;- yourDataframe$cu[i]
-  gmr_post(list(v=v,cs=cs,cm=cm,t=t,ec=ec,ea=ea,el=el,tid=tid,cid=cid,pa=pa,ti=ti,tr=tr,cu=cu,ta=ta,ni=&amp;quot;1&amp;quot;))
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And there you have it, the refunds should be uploaded.&lt;/p&gt;
-
-&lt;h3 id=&#34;uploading-transactions&#34;&gt;Uploading transactions&lt;/h3&gt;
-
-&lt;p&gt;This is actually the exact same steps you go through - the primary difference is that you need to change the product action from refund to purchase:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
-####upload
-v &amp;lt;- 1 #version
-cs &amp;lt;- &amp;quot;measurementprotocol&amp;quot; #source
-cm &amp;lt;- &amp;quot;purchase&amp;quot; #medium
-t &amp;lt;- &amp;quot;event&amp;quot; #type
-ec &amp;lt;- &amp;quot;Ecommerce&amp;quot; #event category
-ea &amp;lt;- &amp;quot;measurementProtocol&amp;quot; #event action
-el &amp;lt;- &amp;quot;refund&amp;quot; #event label
-tid &amp;lt;- &amp;quot;UA-1234567-1&amp;quot; #Google Analytics ID
-pa &amp;lt;- &amp;quot;purchase&amp;quot; #product action
-ta &amp;lt;- &amp;quot;measurementprotocol&amp;quot; #transaction affiliation
-
-#for each row in the dataframe send a hit with measurement protocol
-for(i in 1:nrow(yourDataframe)) {
-  cid &amp;lt;- yourDataframe$cid[i]
-  ti &amp;lt;- yourDataframe$ti[i]
-  tr &amp;lt;- yourDataframe$tr[i]
-  cu &amp;lt;- yourDataframe$cu[i]
-  gmr_post(list(v=v,cs=cs,cm=cm,t=t,ec=ec,ea=ea,el=el,tid=tid,cid=cid,pa=pa,ti=ti,tr=tr,cu=cu,ta=ta,ni=&amp;quot;1&amp;quot;))
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;words-of-caution&#34;&gt;words of caution&lt;/h2&gt;
-
-&lt;p&gt;When you add data to Google Analytics, it is not possible to remove it again, so remember to test what you are doing beforehand and be sure that what you are doing is correct.&lt;/p&gt;
-
-&lt;p&gt;Below is some areas that you need to remember when doing uploads through measurement protocol:&lt;/p&gt;
-
-&lt;h3 id=&#34;1-create-filters-to-block-views&#34;&gt;1. Create filters to block views&lt;/h3&gt;
-
-&lt;p&gt;Create an exclude filter to exclude all event action called &amp;ldquo;measurementprotocol&amp;rdquo;. This ensures that you data is only send to the views you need.&lt;/p&gt;
-
-&lt;h3 id=&#34;2-remove-the-exclude-all-hits-from-known-bots-and-spiders-checkmark&#34;&gt;2. Remove the &amp;ldquo;Exclude all hits from known bots and spiders&amp;rdquo; checkmark&lt;/h3&gt;
-
-&lt;p&gt;In some instances I saw that the measurement protocol hits where blocked when this was not checked off. Remember to switch it on the day after so you are secured against people spamming your analytics account with bot traffic.&lt;/p&gt;
-
-&lt;h3 id=&#34;3-latency&#34;&gt;3. Latency&lt;/h3&gt;
-
-&lt;p&gt;There is a latency from the the data is send to that it is populated. Unfortunately if you add / remove filters before the day is over it will take in / remove the hits from measurement protocol meaning that you will endanger your datacollection.&lt;/p&gt;
-
-&lt;h2 id=&#34;conlusion&#34;&gt;conlusion&lt;/h2&gt;
-
-&lt;p&gt;This is a simple how-to guide on doing basic things with measurement protocol, there are a lot about datacleaning that could have been included but it would be out of the scope of this blogpost.&lt;/p&gt;
-
-&lt;p&gt;In terms of all the parameters added in the call, there are many that could have been excluded, however i choose to add them as it will be easier to filter them out in different instances should you need to do that.&lt;/p&gt;
-
-&lt;p&gt;A main issue with measurement protocol, when you don&amp;rsquo;t have the right client id is that you do loose the user behaviour and affect your traffic if you are doing bulk uploads in a day. It is therefore important to consider if this is the right solution for the task, and be sure that the data being send in is correct.&lt;/p&gt;
+      <title>Example Page 2</title>
+      <link>/hidden/courses/example/example2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/hidden/courses/example/example2/</guid>
+      <description>&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
+&lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+&lt;h2 id=&#34;tip-4&#34;&gt;Tip 4&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Detect missing data in GA with R</title>
-      <link>http://dannymawani.github.io/post/detect-missing-data-with-r-a-google-analytics-example/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://dannymawani.github.io/post/detect-missing-data-with-r-a-google-analytics-example/</guid>
-      <description>
-
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-
+      <link>/post/measurement-protocol-usecases/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/post/measurement-protocol-usecases/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This post is based on a project where we needed to see how many transactions we were actually missing in Google Analytics.&lt;/p&gt;
-
 &lt;h2 id=&#34;the-how-to&#34;&gt;The how to&lt;/h2&gt;
-
 &lt;p&gt;This process is quite simple,
 we will be pulling out transaction id&amp;rsquo;s and then make it into a list. After that we compare that list with another&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ga_id &amp;lt;- &amp;quot;yourgaid&amp;quot;
 
 data &amp;lt;- google_analytics(ga_id, 
@@ -227,64 +88,484 @@ list1 &amp;lt;- setdiff(rowb, rowa)
 #Make a dataframe from only those who are missing
 df &amp;lt;- sfData[sfData$ti %in% list1, ]
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-
 &lt;p&gt;This is a very short tutorial, it is not formatted very pretty, but it should get the trick done in terms of validating if anything should be missing in terms of transactions in Google Analytics. Please leave a comment should you need further elaboration on this progress!&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Pull data from multiple Google Analytics Properties with R</title>
-      <link>http://dannymawani.github.io/post/pull-data-from-multiple-ga-properties/</link>
+      <title>Writing technical content in Academic</title>
+      <link>/hidden/writing-technical-content/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/hidden/writing-technical-content/</guid>
+      <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;
+&lt;p&gt;Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the &lt;code&gt;highlight&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```python
+import pandas as pd
+data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
+data.head()
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas as pd
+data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
+data.head()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;math&#34;&gt;Math&lt;/h3&gt;
+&lt;p&gt;Academic supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the &lt;code&gt;math&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;To render &lt;em&gt;inline&lt;/em&gt; or &lt;em&gt;block&lt;/em&gt; math, wrap your LaTeX math with &lt;code&gt;$...$&lt;/code&gt; or &lt;code&gt;$$...$$&lt;/code&gt;, respectively.&lt;/p&gt;
+&lt;p&gt;Example &lt;strong&gt;math block&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;$$\gamma_{n} = \frac{ 
+\left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T 
+\left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
+{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;p&gt;$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left |\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right |^2}$$&lt;/p&gt;
+&lt;p&gt;Example &lt;strong&gt;inline math&lt;/strong&gt; &lt;code&gt;$\nabla F(\mathbf{x}_{n})$&lt;/code&gt; renders as $\nabla F(\mathbf{x}_{n})$.&lt;/p&gt;
+&lt;p&gt;Example &lt;strong&gt;multi-line math&lt;/strong&gt; using the &lt;code&gt;\\&lt;/code&gt; math linebreak:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;$$f(k;p_0^*) = \begin{cases} p_0^* &amp;amp; \text{if }k=1, \\
+1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;p&gt;$$f(k;p_0^*) = \begin{cases} p_0^* &amp;amp; \text{if }k=1, \&lt;br&gt;
+1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$&lt;/p&gt;
+&lt;h3 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h3&gt;
+&lt;p&gt;Academic supports a Markdown extension for diagrams. You can enable this feature by toggling the &lt;code&gt;diagram&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file or by adding &lt;code&gt;diagram: true&lt;/code&gt; to your page front matter.&lt;/p&gt;
+&lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+graph TD
+A[Hard] --&amp;gt;|Text| B(Round)
+B --&amp;gt; C{Decision}
+C --&amp;gt;|One| D[Result 1]
+C --&amp;gt;|Two| E[Result 2]
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;graph TD
+A[Hard] --&amp;gt;|Text| B(Round)
+B --&amp;gt; C{Decision}
+C --&amp;gt;|One| D[Result 1]
+C --&amp;gt;|Two| E[Result 2]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+sequenceDiagram
+Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&amp;gt;&amp;gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&amp;gt;&amp;gt;Alice: Great!
+John-&amp;gt;&amp;gt;Bob: How about you?
+Bob--&amp;gt;&amp;gt;John: Jolly good!
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;sequenceDiagram
+Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&amp;gt;&amp;gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&amp;gt;&amp;gt;Alice: Great!
+John-&amp;gt;&amp;gt;Bob: How about you?
+Bob--&amp;gt;&amp;gt;John: Jolly good!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An example &lt;strong&gt;Gantt diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+gantt
+section Section
+Completed :done,    des1, 2014-01-06,2014-01-08
+Active        :active,  des2, 2014-01-07, 3d
+Parallel 1   :         des3, after des1, 1d
+Parallel 2   :         des4, after des1, 1d
+Parallel 3   :         des5, after des3, 1d
+Parallel 4   :         des6, after des4, 1d
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;gantt
+section Section
+Completed :done,    des1, 2014-01-06,2014-01-08
+Active        :active,  des2, 2014-01-07, 3d
+Parallel 1   :         des3, after des1, 1d
+Parallel 2   :         des4, after des1, 1d
+Parallel 3   :         des5, after des3, 1d
+Parallel 4   :         des6, after des4, 1d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An example &lt;strong&gt;class diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+classDiagram
+Class01 &amp;lt;|-- AveryLongClass : Cool
+&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Class01
+Class09 --&amp;gt; C2 : Where am i?
+Class09 --* C3
+Class09 --|&amp;gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+class Class10 {
+  &amp;lt;&amp;lt;service&amp;gt;&amp;gt;
+  int id
+  size()
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;classDiagram
+Class01 &amp;lt;|-- AveryLongClass : Cool
+&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Class01
+Class09 --&amp;gt; C2 : Where am i?
+Class09 --* C3
+Class09 --|&amp;gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+class Class10 {
+  &amp;lt;&amp;lt;service&amp;gt;&amp;gt;
+  int id
+  size()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An example &lt;strong&gt;state diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+stateDiagram
+[*] --&amp;gt; Still
+Still --&amp;gt; [*]
+Still --&amp;gt; Moving
+Moving --&amp;gt; Still
+Moving --&amp;gt; Crash
+Crash --&amp;gt; [*]
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;stateDiagram
+[*] --&amp;gt; Still
+Still --&amp;gt; [*]
+Still --&amp;gt; Moving
+Moving --&amp;gt; Still
+Moving --&amp;gt; Crash
+Crash --&amp;gt; [*]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;todo-lists&#34;&gt;Todo lists&lt;/h3&gt;
+&lt;p&gt;You can even write your todo lists in Academic too:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;- [x] Write math example
+- [x] Write diagram example
+- [ ] Do something else
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;Write math example&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;Write diagram example&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;Do something else&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
+&lt;p&gt;Represent your data in tables:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;First Header&lt;/th&gt;
+&lt;th&gt;Second Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;asides&#34;&gt;Asides&lt;/h3&gt;
+&lt;p&gt;Academic supports a 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#alerts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcode for asides&lt;/a&gt;, also referred to as &lt;em&gt;notices&lt;/em&gt;, &lt;em&gt;hints&lt;/em&gt;, or &lt;em&gt;alerts&lt;/em&gt;. By wrapping a paragraph in &lt;code&gt;{{% alert note %}} ... {{% /alert %}}&lt;/code&gt;, it will render as an aside.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% alert note %}}
+A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+{{% /alert %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;icons&#34;&gt;Icons&lt;/h3&gt;
+&lt;p&gt;Academic enables you to use a wide range of 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/#icons&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;icons from &lt;em&gt;Font Awesome&lt;/em&gt; and &lt;em&gt;Academicons&lt;/em&gt;&lt;/a&gt; in addition to 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#emojis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;emojis&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here are some examples using the &lt;code&gt;icon&lt;/code&gt; shortcode to render icons:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; icon name=&amp;quot;terminal&amp;quot; pack=&amp;quot;fas&amp;quot; &amp;gt;}} Terminal  
+{{&amp;lt; icon name=&amp;quot;python&amp;quot; pack=&amp;quot;fab&amp;quot; &amp;gt;}} Python  
+{{&amp;lt; icon name=&amp;quot;r-project&amp;quot; pack=&amp;quot;fab&amp;quot; &amp;gt;}} R
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-terminal  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Terminal&lt;br&gt;
+
+  &lt;i class=&#34;fab fa-python  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Python&lt;br&gt;
+
+  &lt;i class=&#34;fab fa-r-project  pr-1 fa-fw&#34;&gt;&lt;/i&gt; R&lt;/p&gt;
+&lt;h3 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R on the Google Cloud Platform - Scheduling tasks</title>
+      <link>/talk/superweek-2019/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/superweek-2019/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;the slides&lt;/strong&gt;&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 80.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;http://rpubs.com/dannymawani/mc2019cph&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>An example preprint / working paper</title>
+      <link>/hidden/publication/preprint/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/hidden/publication/preprint/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Creating a workflow with measurement protocol and R</title>
+      <link>/post/detect-missing-data-with-r-a-google-analytics-example/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://dannymawani.github.io/post/pull-data-from-multiple-ga-properties/</guid>
-      <description>
+      <guid>/post/detect-missing-data-with-r-a-google-analytics-example/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#how-the-measurement-protcol-works&#34;&gt;How the measurement protcol works&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#usecases&#34;&gt;Usecases&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#uploading-refunds&#34;&gt;Uploading refunds&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#uploading-transactions&#34;&gt;Uploading transactions&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#words-of-caution&#34;&gt;words of caution&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#1-create-filters-to-block-views&#34;&gt;1. Create filters to block views&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#2-remove-the-exclude-all-hits-from-known-bots-and-spiders-checkmark&#34;&gt;2. Remove the &amp;ldquo;Exclude all hits from known bots and spiders&amp;rdquo; checkmark&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#3-latency&#34;&gt;3. Latency&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#conlusion&#34;&gt;conlusion&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This blogpost was inspired by a release to a website which had some last minute changed that when the site when live, caused a javaScript error that blocked the ecommerce transaction data to not populate.&lt;/p&gt;
+&lt;p&gt;With this error, the client lost 1800+ transactions to the site meaning that we had to upload these in the right currency format to make sure that all the data was still avaliable.&lt;/p&gt;
+&lt;h2 id=&#34;how-the-measurement-protcol-works&#34;&gt;How the measurement protcol works&lt;/h2&gt;
+&lt;p&gt;Whenever you visit a website, Google Analytic will collect information by sending a long list of query parameters to an endpoint, to which it is stored and modelled to show information in GA. Visiting this blogpost will for an example generate a network call similar to this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javaScript&#34;&gt;https://www.google-analytics.com/r/collect?v=1&amp;amp;_v=j73&amp;amp;a=1679354847&amp;amp;t=pageview&amp;amp;_s=1&amp;amp;dl=https%3A%2F%2Fwww.mawani.dk%2Fpost%2Fmeasurement-protocol-usecases%2F&amp;amp;ul=en-us&amp;amp;de=UTF-8&amp;amp;dt=Creating%20a%20workflow%20with%20measurement%20protocol%20and%20R%20%7C%20DMH%20Analytics&amp;amp;sd=24-bit&amp;amp;sr=1440x900&amp;amp;vp=1440x256&amp;amp;je=0&amp;amp;_u=QACAAAAB~&amp;amp;jid=651243071&amp;amp;gjid=1319476248&amp;amp;cid=1164110852.1529450664&amp;amp;tid=UA-134673438-1&amp;amp;_gid=106302445.1550868348&amp;amp;_r=1&amp;amp;gtm=2wg241WBTJ7HR&amp;amp;z=1265093896
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will tell Google Analytics that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The URL is this one&lt;/li&gt;
+&lt;li&gt;My browser language is en-us&lt;/li&gt;
+&lt;li&gt;what my device id is from the cookie so it can recognize me as a new or returning user&lt;/li&gt;
+&lt;li&gt;What tracking ID it should populate the data to&lt;/li&gt;
+&lt;li&gt;What my session ID is.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What measurement protocol will do is to emulate the same types of parameters and have it populate the data in GA.&lt;/p&gt;
+&lt;p&gt;For a more detailed view on measurement protocol I would advise you to visit
 
-&lt;p&gt;&lt;h2&gt;Table of Contents&lt;/h2&gt;
-HAHAHUGOSHORTCODE-TOC0-HBHB&lt;/p&gt;
+&lt;a href=&#34;https://www.optimizesmart.com/understanding-universal-analytics-measurement-protocol/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Optimize Smart for their deepgoing description&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;usecases&#34;&gt;Usecases&lt;/h2&gt;
+&lt;p&gt;I have used measurement protocol for a various number of things. As you can send in all the supported information, this is a great area to explore in terms of improving your data collection. As for many of my other posts, I will be using another package created by 
+&lt;a href=&#34;https://twitter.com/HoloMarkeD&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mark Edmonson&lt;/a&gt; called 
+&lt;a href=&#34;https://github.com/MarkEdmondson1234/googleMeasureR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;googleMeasureR&lt;/a&gt; to send the hits to Google Analytics, however you can easily transfer the way of doing this to any language of your choice such as Python, javaScript, PHP etc.&lt;/p&gt;
+&lt;h3 id=&#34;uploading-refunds&#34;&gt;Uploading refunds&lt;/h3&gt;
+&lt;p&gt;To upload refunds you first need a list of all the transactions that are missing. If you are on a site with multiple currencies it is also quite important that you can specify what unit that you are adding data to, so you are sure that it is populated correctly.&lt;/p&gt;
+&lt;p&gt;First thing that need to be done is to make sure that the data is loaded into R. I have chosen to rename the columns to the GA naming convention for measurement protocol, but it is not important:&lt;/p&gt;
 
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;./img/transaction_example.png&#34; &gt;
+
+
+  &lt;img src=&#34;./img/transaction_example.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Once that is made, we need to either have the client id (Google Analytics Cookie ID for identifying people), or create one yourself. This can be done by this code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
+#loading the library
+library(stringi)
+#the count of rows you need to upload
+n &amp;lt;- nrow(yourDataframe)
+
+#create the ids
+paste(&amp;quot;1.2.&amp;quot;,stri_rand_strings(n, 10, pattern = &amp;quot;[0-9]&amp;quot;),&amp;quot;.&amp;quot;,stri_rand_strings(n, 10, pattern = &amp;quot;[0-9]&amp;quot;), sep = &amp;quot;&amp;quot;)
+
+#output will look something like this if you print it out in the console
+
+ [1] &amp;quot;1.2.6237558844.6715115260&amp;quot; &amp;quot;1.2.4893337628.0287915875&amp;quot; &amp;quot;1.2.1414860945.6106576917&amp;quot;
+ [4] &amp;quot;1.2.8992586956.6450277842&amp;quot; &amp;quot;1.2.2032023475.7135641438&amp;quot; &amp;quot;1.2.1490282359.1139988407&amp;quot;
+ [7] &amp;quot;1.2.7613957961.8692578524&amp;quot; &amp;quot;1.2.8481705025.8828767075&amp;quot; &amp;quot;1.2.1331455569.2063291053&amp;quot;
+[10] &amp;quot;1.2.9292335596.4531869013&amp;quot;
+
+### add it to the dataframe
+
+yourDataframe$cid &amp;lt;- paste(&amp;quot;1.2.&amp;quot;,stri_rand_strings(n, 10, pattern = &amp;quot;[0-9]&amp;quot;),&amp;quot;.&amp;quot;,stri_rand_strings(n, 10, pattern = &amp;quot;[0-9]&amp;quot;), sep = &amp;quot;&amp;quot;)
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now that a client id is added we are ready to push the refunds into Google Analytics:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
+####upload
+v &amp;lt;- 1 #version
+cs &amp;lt;- &amp;quot;measurementprotocol&amp;quot; #source
+cm &amp;lt;- &amp;quot;refund&amp;quot; #medium
+t &amp;lt;- &amp;quot;event&amp;quot; #type
+ec &amp;lt;- &amp;quot;Ecommerce&amp;quot; #event category
+ea &amp;lt;- &amp;quot;measurementProtocol&amp;quot; #event action
+el &amp;lt;- &amp;quot;refund&amp;quot; #event label
+tid &amp;lt;- &amp;quot;UA-1234567-1&amp;quot; #Google Analytics ID
+pa &amp;lt;- &amp;quot;refund&amp;quot; #product action
+ta &amp;lt;- &amp;quot;measurementprotocol&amp;quot; #transaction affiliation
+
+#for each row in the dataframe send a hit with measurement protocol
+for(i in 1:nrow(yourDataframe)) {
+  cid &amp;lt;- yourDataframe$cid[i]
+  ti &amp;lt;- yourDataframe$ti[i]
+  tr &amp;lt;- yourDataframe$tr[i]
+  cu &amp;lt;- yourDataframe$cu[i]
+  gmr_post(list(v=v,cs=cs,cm=cm,t=t,ec=ec,ea=ea,el=el,tid=tid,cid=cid,pa=pa,ti=ti,tr=tr,cu=cu,ta=ta,ni=&amp;quot;1&amp;quot;))
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And there you have it, the refunds should be uploaded.&lt;/p&gt;
+&lt;h3 id=&#34;uploading-transactions&#34;&gt;Uploading transactions&lt;/h3&gt;
+&lt;p&gt;This is actually the exact same steps you go through - the primary difference is that you need to change the product action from refund to purchase:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
+####upload
+v &amp;lt;- 1 #version
+cs &amp;lt;- &amp;quot;measurementprotocol&amp;quot; #source
+cm &amp;lt;- &amp;quot;purchase&amp;quot; #medium
+t &amp;lt;- &amp;quot;event&amp;quot; #type
+ec &amp;lt;- &amp;quot;Ecommerce&amp;quot; #event category
+ea &amp;lt;- &amp;quot;measurementProtocol&amp;quot; #event action
+el &amp;lt;- &amp;quot;refund&amp;quot; #event label
+tid &amp;lt;- &amp;quot;UA-1234567-1&amp;quot; #Google Analytics ID
+pa &amp;lt;- &amp;quot;purchase&amp;quot; #product action
+ta &amp;lt;- &amp;quot;measurementprotocol&amp;quot; #transaction affiliation
+
+#for each row in the dataframe send a hit with measurement protocol
+for(i in 1:nrow(yourDataframe)) {
+  cid &amp;lt;- yourDataframe$cid[i]
+  ti &amp;lt;- yourDataframe$ti[i]
+  tr &amp;lt;- yourDataframe$tr[i]
+  cu &amp;lt;- yourDataframe$cu[i]
+  gmr_post(list(v=v,cs=cs,cm=cm,t=t,ec=ec,ea=ea,el=el,tid=tid,cid=cid,pa=pa,ti=ti,tr=tr,cu=cu,ta=ta,ni=&amp;quot;1&amp;quot;))
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;words-of-caution&#34;&gt;words of caution&lt;/h2&gt;
+&lt;p&gt;When you add data to Google Analytics, it is not possible to remove it again, so remember to test what you are doing beforehand and be sure that what you are doing is correct.&lt;/p&gt;
+&lt;p&gt;Below is some areas that you need to remember when doing uploads through measurement protocol:&lt;/p&gt;
+&lt;h3 id=&#34;1-create-filters-to-block-views&#34;&gt;1. Create filters to block views&lt;/h3&gt;
+&lt;p&gt;Create an exclude filter to exclude all event action called &amp;ldquo;measurementprotocol&amp;rdquo;. This ensures that you data is only send to the views you need.&lt;/p&gt;
+&lt;h3 id=&#34;2-remove-the-exclude-all-hits-from-known-bots-and-spiders-checkmark&#34;&gt;2. Remove the &amp;ldquo;Exclude all hits from known bots and spiders&amp;rdquo; checkmark&lt;/h3&gt;
+&lt;p&gt;In some instances I saw that the measurement protocol hits where blocked when this was not checked off. Remember to switch it on the day after so you are secured against people spamming your analytics account with bot traffic.&lt;/p&gt;
+&lt;h3 id=&#34;3-latency&#34;&gt;3. Latency&lt;/h3&gt;
+&lt;p&gt;There is a latency from the the data is send to that it is populated. Unfortunately if you add / remove filters before the day is over it will take in / remove the hits from measurement protocol meaning that you will endanger your datacollection.&lt;/p&gt;
+&lt;h2 id=&#34;conlusion&#34;&gt;conlusion&lt;/h2&gt;
+&lt;p&gt;This is a simple how-to guide on doing basic things with measurement protocol, there are a lot about datacleaning that could have been included but it would be out of the scope of this blogpost.&lt;/p&gt;
+&lt;p&gt;In terms of all the parameters added in the call, there are many that could have been excluded, however i choose to add them as it will be easier to filter them out in different instances should you need to do that.&lt;/p&gt;
+&lt;p&gt;A main issue with measurement protocol, when you don&amp;rsquo;t have the right client id is that you do loose the user behaviour and affect your traffic if you are doing bulk uploads in a day. It is therefore important to consider if this is the right solution for the task, and be sure that the data being send in is correct.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pull data from multiple Google Analytics Properties with R</title>
+      <link>/post/pull-data-from-multiple-ga-properties/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>/post/pull-data-from-multiple-ga-properties/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#background&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#usecase&#34;&gt;Usecase&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#the-code&#34;&gt;The code&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#1-connect-to-google-analytics&#34;&gt;1. Connect To Google Analytics&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#2-setting-up-the-script-to-pull-from-multiple-properties&#34;&gt;2. Setting up the script to pull from multiple properties&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
 &lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
-
 &lt;p&gt;Being in an agency, we often have to do benchmarks, reports etc. that require us to pull data from multiple Google Analytics properties.&lt;/p&gt;
-
 &lt;h2 id=&#34;usecase&#34;&gt;Usecase&lt;/h2&gt;
-
 &lt;p&gt;One of our client have multiple properties each containing 3 business units, a B2B, B2C and B2G (Business to government). To make sure that we could reproduce the reporting for them, we build an R script that:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Pulls Google Analytics data&lt;/li&gt;
 &lt;li&gt;Adds business unit and country to the dataframe as additional variables / columns&lt;/li&gt;
 &lt;li&gt;Merges the data into another dataframe&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h2 id=&#34;the-code&#34;&gt;The code&lt;/h2&gt;
-
-&lt;p&gt;To extract the data, use the &lt;code&gt;googleAnalyticsR&lt;/code&gt;and &lt;code&gt;googleAuthR&lt;/code&gt;package made by &lt;a href=&#34;https://twitter.com/HoloMarkeD&#34;&gt;Mark Edmonson&lt;/a&gt;. To see more information about installing the packages and using the libraries please check out the site made explaining how the package work &lt;a href=&#34;http://code.markedmondson.me/googleAnalyticsR/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;To extract the data, use the &lt;code&gt;googleAnalyticsR&lt;/code&gt;and &lt;code&gt;googleAuthR&lt;/code&gt;package made by 
+&lt;a href=&#34;https://twitter.com/HoloMarkeD&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mark Edmonson&lt;/a&gt;. To see more information about installing the packages and using the libraries please check out the site made explaining how the package work 
+&lt;a href=&#34;http://code.markedmondson.me/googleAnalyticsR/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;1-connect-to-google-analytics&#34;&gt;1. Connect To Google Analytics&lt;/h3&gt;
-
 &lt;p&gt;To begin with we must first authenticate to Google Analytics.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(googleAnalyticsR)
 googleAnalyticsR::ga_auth()
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;Next you will be asked to log in with your Google Account. Once that is done, we are ready to do the rest of the script.&lt;/p&gt;
-
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    
-Remember to authenticate with the account you want access to
-
+    Remember to authenticate with the account you want access to
   &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;h3 id=&#34;2-setting-up-the-script-to-pull-from-multiple-properties&#34;&gt;2. Setting up the script to pull from multiple properties&lt;/h3&gt;
-
 &lt;p&gt;To combine different properties we are fest specifying the views we need and adding them to a list. Once that is done we will create 2 corresponding lists with business units and countries.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#this are the view links which can be find under view settings or through the URL of the view - If you are used to working with this package, you can also do an extraction of all your views directly from R. The below views are fake.
 
 #Danish
@@ -335,39 +616,50 @@ upload &amp;lt;- rbind(upload,data)
 }
 
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;The end states that for each element in the view list, then run the analytics script, apply the data and business unit to the corresponding list item to the dataframe &amp;ldquo;data&amp;rdquo;, and then add it to the empty dataframe.&lt;/p&gt;
-
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Since writing this post i now recommend using mapply (or future_mapply to run it faster in parallel). I will however not change this, as the for loop might do a better job explaining what happens and how the process work.
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;Now that the dataframe has been made it is up to you what to do with it. you can either upload it to &lt;a href=&#34;https://bigquery.cloud.google.com&#34;&gt;bigQuery&lt;/a&gt;, do some statistics with R and some plot with &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;ggplot2&lt;/a&gt; or just write it down to a CSV file with &lt;code&gt;r write.csv2(upload,&amp;quot;yourFileName.csv&amp;quot;)&lt;/code&gt; and work with it in another tool like Excel, Tableau or powerBI.&lt;/p&gt;
+&lt;p&gt;Now that the dataframe has been made it is up to you what to do with it. you can either upload it to 
+&lt;a href=&#34;https://bigquery.cloud.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bigQuery&lt;/a&gt;, do some statistics with R and some plot with 
+&lt;a href=&#34;https://ggplot2.tidyverse.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ggplot2&lt;/a&gt; or just write it down to a CSV file with &lt;code&gt;r write.csv2(upload,&amp;quot;yourFileName.csv&amp;quot;)&lt;/code&gt; and work with it in another tool like Excel, Tableau or powerBI.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Source R scripts from github through Google Cloud Storage</title>
-      <link>http://dannymawani.github.io/post/source-r-with-github/</link>
+      <link>/post/source-r-with-github/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://dannymawani.github.io/post/source-r-with-github/</guid>
-      <description>
-
-&lt;p&gt;&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;/p&gt;
-
+      <guid>/post/source-r-with-github/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#background&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#why-is-sourcing-from-github-smart&#34;&gt;Why is sourcing from github smart?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#the-how-to-part&#34;&gt;The how-to part&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#1-setting-up-a-github-account&#34;&gt;1. Setting up a github account&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#2-creating-a-bucket-in-google-cloud-storage&#34;&gt;2. Creating a bucket in Google Cloud Storage&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#3-creating-a-trigger-with-cloud-build&#34;&gt;3. Creating a trigger with Cloud Build&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#4-setting-up-the-yalm&#34;&gt;4. Setting up the YALM&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#5-sourcing-scripts-from-cloud-storage&#34;&gt;5. Sourcing scripts from Cloud Storage&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#thoughts-and-conclusion&#34;&gt;Thoughts and conclusion&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;p&gt;source-r-with-github&lt;/p&gt;
 &lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
-
 &lt;p&gt;In my company, we have gone from 1 person working with adhoc assignment with R, to 4 persons within the last year. This set&amp;rsquo;s up a whole new level of requirements to ensure quality, stability and safety when it comes to working with datamodels and API calls. Furthermore, there is also an aspect of reusability that needed to be set up to ensure that we could produce our solutions faster,and better updated.&lt;/p&gt;
-
 &lt;p&gt;To do this, we started looking into differen&amp;rsquo;t types of systems to work with our code. In the end we have selected Github as our main source of creating our code and documentation.&lt;/p&gt;
-
-&lt;p&gt;To get to know how to do this, I actually used this guide: &lt;a href=&#34;https://www.google.com&#34;&gt;Automated Static Website Publishing with Cloud Build
+&lt;p&gt;To get to know how to do this, I actually used this guide: 
+&lt;a href=&#34;https://www.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Automated Static Website Publishing with Cloud Build
 &lt;/a&gt;, and used most of the principles in the guide to set up our setup.&lt;/p&gt;
-
 &lt;h2 id=&#34;why-is-sourcing-from-github-smart&#34;&gt;Why is sourcing from github smart?&lt;/h2&gt;
-
 &lt;p&gt;Github allows us to:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Share code easily&lt;/li&gt;
 &lt;li&gt;Scale projects to other customers&lt;/li&gt;
@@ -376,91 +668,132 @@ upload &amp;lt;- rbind(upload,data)
 &lt;li&gt;See who have created code&lt;/li&gt;
 &lt;li&gt;Source Scripts directly in R&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Unfortunately, going into how to use Github is a bit out of the scope for this post, however I recommend going to Github and read their documentation and do a few searches on the net to get started.&lt;/p&gt;
-
 &lt;h2 id=&#34;the-how-to-part&#34;&gt;The how-to part&lt;/h2&gt;
-
 &lt;p&gt;In order to source R scripts from github there are a few things you need to have ready in order to get ready:&lt;/p&gt;
-
 &lt;h3 id=&#34;1-setting-up-a-github-account&#34;&gt;1. Setting up a github account&lt;/h3&gt;
-
-&lt;p&gt;One of the first thing you will need is to actually create a &lt;a href=&#34;https://www.google.com&#34;&gt;Github account&lt;/a&gt;
+&lt;p&gt;One of the first thing you will need is to actually create a 
+&lt;a href=&#34;https://www.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github account&lt;/a&gt;
 . This can be done on the frontpage:&lt;/p&gt;
 
 
 
 
+
   
+
+
+
+
+
+
+
+
+
+
 
 &lt;figure&gt;
 
-&lt;img src=&#34;http://dannymawani.github.io/img/githubFrontpage_githubR.png&#34; /&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;./img/githubFrontpage_githubR.png&#34; &gt;
+
+
+  &lt;img src=&#34;./img/githubFrontpage_githubR.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
 
 
 &lt;/figure&gt;
 
-&lt;p&gt;Once that is done, &lt;a href=&#34;https://github.com/new&#34;&gt;create a repository&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Once that is done, 
+&lt;a href=&#34;https://github.com/new&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;create a repository&lt;/a&gt;:&lt;/p&gt;
+
 
 
 
 
   
 
+
+
+
+
+
+
+
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;http://dannymawani.github.io/img/createRepositories_githubR.png&#34; /&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;./img/createRepositories_githubR.png&#34; &gt;
+
+
+  &lt;img src=&#34;./img/createRepositories_githubR.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
 
 
 &lt;/figure&gt;
 
-&lt;p&gt;Recently, it&amp;rsquo;s been possible to &lt;a href=&#34;https://www.google.com&#34;&gt;create private repositories for free&lt;/a&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. As we are multiple users that are using Github right now, we did manage to get our financaial department to approve the monthly 7$ account fee, however in theory, you could create a shared login to help get you started.&lt;/p&gt;
-
+&lt;p&gt;Recently, it&amp;rsquo;s been possible to 
+&lt;a href=&#34;https://www.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;create private repositories for free&lt;/a&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. As we are multiple users that are using Github right now, we did manage to get our financaial department to approve the monthly 7$ account fee, however in theory, you could create a shared login to help get you started.&lt;/p&gt;
 &lt;h3 id=&#34;2-creating-a-bucket-in-google-cloud-storage&#34;&gt;2. Creating a bucket in Google Cloud Storage&lt;/h3&gt;
-
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/billing/docs/how-to/manage-billing-account&#34;&gt;Set up billing for GCP (Google Cloud Platform)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://console.cloud.google.com/storage/&#34;&gt;Create a bucket in Google Cloud Storage)&lt;/a&gt;: &lt;br&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://cloud.google.com/billing/docs/how-to/manage-billing-account&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Set up billing for GCP (Google Cloud Platform)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://console.cloud.google.com/storage/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Create a bucket in Google Cloud Storage)&lt;/a&gt;: &lt;br&gt;
+
+
 
 
 
   
 
+
+
+
+
+
+
+
+
+
+
 &lt;figure&gt;
 
-&lt;img src=&#34;http://dannymawani.github.io/img/createBucket_githubR.png&#34; /&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;./img/createBucket_githubR.png&#34; &gt;
 
 
-&lt;/figure&gt;&lt;/li&gt;
+  &lt;img src=&#34;./img/createBucket_githubR.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-
 &lt;h3 id=&#34;3-creating-a-trigger-with-cloud-build&#34;&gt;3. Creating a trigger with Cloud Build&lt;/h3&gt;
-
-&lt;p&gt;Now, this part is something that is already documented in the GCP documentaion. To avoid copying the same guide in this post, &lt;a href=&#34;https://cloud.google.com/community/tutorials/automated-publishing-cloud-build&#34;&gt;instead go to this page&lt;/a&gt; and follow the steps from the headling: &lt;strong&gt;Set up automated builds&lt;/strong&gt; until you see this line: &amp;ldquo;Now, create a cloudbuild.yaml&amp;rdquo;. From there, you will not need to follow the rest of the steps to continue this guide.&lt;/p&gt;
-
+&lt;p&gt;Now, this part is something that is already documented in the GCP documentaion. To avoid copying the same guide in this post, 
+&lt;a href=&#34;https://cloud.google.com/community/tutorials/automated-publishing-cloud-build&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;instead go to this page&lt;/a&gt; and follow the steps from the headling: &lt;strong&gt;Set up automated builds&lt;/strong&gt; until you see this line: &amp;ldquo;Now, create a cloudbuild.yaml&amp;rdquo;. From there, you will not need to follow the rest of the steps to continue this guide.&lt;/p&gt;
 &lt;h3 id=&#34;4-setting-up-the-yalm&#34;&gt;4. Setting up the YALM&lt;/h3&gt;
-
 &lt;p&gt;YALM stands for &amp;ldquo;Yet Another Markup Language&amp;rdquo; and will be added to Github. From here, the YALM file sends the information to Cloud Build that copies the updates on Github into the Cloud Storage Bucket just created.&lt;/p&gt;
-
 &lt;p&gt;In your Github repo, click on &amp;ldquo;Create new file&amp;rdquo;. Now, add the following YALM syntax in the edit section:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-YALM&#34;&gt;steps:
   - name: gcr.io/cloud-builders/gsutil
     args: [&amp;quot;-m&amp;quot;, &amp;quot;rsync&amp;quot;, &amp;quot;-r&amp;quot;, &amp;quot;-c&amp;quot;, &amp;quot;-d&amp;quot;, &amp;quot;.&amp;quot;, &amp;quot;gs://yourfolderincloudstorage/ifneededthencreateasubfolder&amp;quot;]
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;save the file as cloudbuild.yaml.&lt;/p&gt;
-
 &lt;p&gt;Once that is done, each change made to your repository will be pushed directly to Google Cloud Storage, where it is possible to run R scripts.&lt;/p&gt;
-
 &lt;h3 id=&#34;5-sourcing-scripts-from-cloud-storage&#34;&gt;5. Sourcing scripts from Cloud Storage&lt;/h3&gt;
-
-&lt;p&gt;Playing around with R and the Google API universe usually means using something that &lt;a href=&#34;http://code.markedmondson.me&#34;&gt;Mark Edmonson has build&lt;/a&gt;, and this post is not an exception.&lt;/p&gt;
-
-&lt;p&gt;We will be using the Package called &amp;ldquo;googleCloudStorageR&amp;rdquo;, which you can find more information about &lt;a href=&#34;https://cran.r-project.org/web/packages/googleCloudStorageR/vignettes/googleCloudStorageR.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
+&lt;p&gt;Playing around with R and the Google API universe usually means using something that 
+&lt;a href=&#34;http://code.markedmondson.me&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mark Edmonson has build&lt;/a&gt;, and this post is not an exception.&lt;/p&gt;
+&lt;p&gt;We will be using the Package called &amp;ldquo;googleCloudStorageR&amp;rdquo;, which you can find more information about 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/googleCloudStorageR/vignettes/googleCloudStorageR.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To source a script from Google Cloud Storage, use this &lt;code&gt;R code&lt;/code&gt;to authenticate and source the script you need:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;#install.package(&amp;quot;googleCloudStorageR&amp;quot;) if you have not installed it yet
 
 #load the library
@@ -471,404 +804,475 @@ gcs_auth()
 
 googleCloudStorageR::gcs_source(&#39;yoursubfolderifyouhaveone/yourscript.R&#39;, bucket = &#39;yourcreatedbucket&#39;)
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;And voila. This means that you can always download your R files where ever you need it, build on it, add the information back to github and source the script from a third place without having to have multiple copies of your code laying around.&lt;/p&gt;
-
 &lt;h2 id=&#34;thoughts-and-conclusion&#34;&gt;Thoughts and conclusion&lt;/h2&gt;
-
 &lt;p&gt;This post have showed how to use Github to run R scripts and keep them updated. I do recommend trying to document and automate as much as possible when working with R, however this should only be used whenever it makes sense. If you are building something on the fly that will only be used for a specific tasks once, then it might not make sense to go through all of this to make your workflow optimal.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;A repository is a folder to which your content in github is stored. This is usually your code files.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;A repository is a folder to which your content in github is stored. This is usually your code files. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
+&lt;/section&gt;
 </description>
     </item>
     
     <item>
-      <title>Superweek 2019</title>
-      <link>http://dannymawani.github.io/talk/superweek-2019/</link>
-      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://dannymawani.github.io/talk/superweek-2019/</guid>
-      <description>&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/28qsnfrw9J3zHF&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/superweek2019-dmo-presentation&#34; title=&#34;Superweek2019 dmo presentation&#34; target=&#34;_blank&#34;&gt;Superweek2019 dmo presentation&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+      <title>Display Jupyter Notebooks with Academic</title>
+      <link>/hidden/jupyter/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/hidden/jupyter/</guid>
+      <description>&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
+Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./index_1_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Welcome to Academic!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;install-python-and-jupyterlab&#34;&gt;Install Python and JupyterLab&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and JupyterLab.&lt;/p&gt;
+&lt;p&gt;Alternatively, install JupyterLab with &lt;code&gt;pip3 install jupyterlab&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
+&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY-WEBSITE-FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;SHORT-POST-TITLE&amp;gt;&lt;/code&gt; with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir -p &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
+cd &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
+jupyter lab index.ipynb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;jupyter&lt;/code&gt; command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.&lt;/p&gt;
+&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
+&lt;p&gt;The first cell of your Jupter notebook will contain your post metadata (
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;front matter&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;In Jupter, choose &lt;em&gt;Markdown&lt;/em&gt; as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: My post&#39;s title
+date: 2019-09-01
+
+# Put any other Academic metadata here...
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Edit the metadata of your post, using the 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation&lt;/a&gt; as a guide to the available options.&lt;/p&gt;
+&lt;p&gt;To set a 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
+&lt;p&gt;For other tips, such as using math, see the guide on 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir=.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;p&gt;This post was created with Jupyter. The orginal files can be found at &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&#34;&gt;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>/slides/example/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/slides/example/</guid>
+      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-academic&#34;&gt;Create slides in Markdown with Academic&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic&lt;/a&gt; | 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+&lt;p&gt;Block math:&lt;/p&gt;
+&lt;p&gt;$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+&lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+Three
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/boards.jpg&#34;
+  &gt;
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Superweek 2019 - A tale of automation in data engineering</title>
+      <link>/talk/r-on-google-cloud-platform/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/r-on-google-cloud-platform/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;the slides&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/28qsnfrw9J3zHF&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/superweek2019-dmo-presentation&#34; title=&#34;Superweek2019 dmo presentation&#34; target=&#34;_blank&#34;&gt;Superweek2019 dmo presentation&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Black friday seminar</title>
-      <link>http://dannymawani.github.io/talk/blackfriday/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://dannymawani.github.io/talk/blackfriday/</guid>
-      <description>&lt;p&gt;This talk is in danish.&lt;/p&gt;
-
+      <link>/talk/blackfriday/</link>
+      <pubDate>Sat, 01 Dec 2018 10:00:00 +0000</pubDate>
+      <guid>/talk/blackfriday/</guid>
+      <description>&lt;h1 id=&#34;se-videoen-her&#34;&gt;Se videoen her:&lt;/h1&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/LNRdiEFOtMQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LNRdiEFOtMQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 </description>
     </item>
     
     <item>
-      <title>How to anonymize IP adresses and still be able to exclude internal traffic</title>
-      <link>http://dannymawani.github.io/talk/ip-anonymization-while-excluding-internal-trafic/</link>
+      <title>GDPR with Google Tag Manager</title>
+      <link>/talk/ip-anonymization-while-excluding-internal-trafic/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://dannymawani.github.io/talk/ip-anonymization-while-excluding-internal-trafic/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://analytics.mawani.dk/excluding-internal-traffic-anonymizing-ip-adresses-google-analytics/&#34;&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/6Vr0jPcBgPD6dd&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/anonymization-of-ip-adresses-with-google-tag-manager&#34; title=&#34;Anonymization of IP adresses with Google Tag Manager&#34; target=&#34;_blank&#34;&gt;Anonymization of IP adresses with Google Tag Manager&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
-</description>
+      <guid>/talk/ip-anonymization-while-excluding-internal-trafic/</guid>
+      <description>&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/8L7n7nX0ZUINKB&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/gdpr-within-google-tag-manager-measurecamp-2018&#34; title=&#34;GDPR within Google Tag Manager - Measurecamp 2018&#34; target=&#34;_blank&#34;&gt;GDPR within Google Tag Manager - Measurecamp 2018&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to anonymize IP adresses and still be able to exclude internal traffic</title>
+      <link>/talk/gdpr-with-google-tag-manager/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/talk/gdpr-with-google-tag-manager/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://analytics.mawani.dk/excluding-internal-traffic-anonymizing-ip-adresses-google-analytics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/6Vr0jPcBgPD6dd&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/anonymization-of-ip-adresses-with-google-tag-manager&#34; title=&#34;Anonymization of IP adresses with Google Tag Manager&#34; target=&#34;_blank&#34;&gt;Anonymization of IP adresses with Google Tag Manager&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;</description>
     </item>
     
     <item>
       <title>R introduction class for measurecamp</title>
-      <link>http://dannymawani.github.io/talk/r-introduction-class-measurecamp/</link>
+      <link>/talk/r-introduction-class-measurecamp/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://dannymawani.github.io/talk/r-introduction-class-measurecamp/</guid>
+      <guid>/talk/r-introduction-class-measurecamp/</guid>
       <description>&lt;p&gt;&lt;strong&gt;the slides&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/uz2aLKQKZ2CSiB&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/rclass&#34; title=&#34;Rclass&#34; target=&#34;_blank&#34;&gt;Rclass&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:a2aa2406-42b7-4030-8bb9-fa53525d20c8&#34;&gt;full link here&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Respecting your users by setting Google Tag Manager up for GDPR </title>
-      <link>http://dannymawani.github.io/talk/gdpr-with-google-tag-manager/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://dannymawani.github.io/talk/gdpr-with-google-tag-manager/</guid>
-      <description>&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/8L7n7nX0ZUINKB&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/gdpr-within-google-tag-manager-measurecamp-2018&#34; title=&#34;GDPR within Google Tag Manager - Measurecamp 2018&#34; target=&#34;_blank&#34;&gt;GDPR within Google Tag Manager - Measurecamp 2018&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/uz2aLKQKZ2CSiB&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/rclass&#34; title=&#34;Rclass&#34; target=&#34;_blank&#34;&gt;Rclass&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:a2aa2406-42b7-4030-8bb9-fa53525d20c8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;full link here&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Privacy Policy</title>
-      <link>http://dannymawani.github.io/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0200</pubDate>
-      
-      <guid>http://dannymawani.github.io/privacy/</guid>
-      <description>&lt;p&gt;This site only uses Google Analytics to show user statistics. No personal information is tracked.&lt;/p&gt;
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://dannymawani.github.io/slides/mccph19/presentation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://dannymawani.github.io/slides/mccph19/presentation/</guid>
-      <description>
-
-
-&lt;div id=&#34;measurecamp-2019---cph&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Measurecamp 2019 - CPH&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Creating datapipelines with R&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;By Danny Mawani Holmgaard&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;agenda&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Agenda&lt;/h2&gt;
-&lt;div class=&#34;left&#34;&gt;
-&lt;blockquote&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;About my journey&lt;/li&gt;
-&lt;li&gt;Stuff I am still figuring out&lt;/li&gt;
-&lt;li&gt;Learn to grab different types of data&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&#34;right&#34;&gt;
-&lt;blockquote&gt;
-&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Connect &lt;strong&gt;Github&lt;/strong&gt; and &lt;strong&gt;Cloud Storage&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Use &lt;strong&gt;R&lt;/strong&gt; in the &lt;strong&gt;GCP&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Extract Transform and Load data into BigQuery&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;my-journey&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;My journey&lt;/h1&gt;
-&lt;div id=&#34;what-i-do&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;What I do&lt;/h2&gt;
-&lt;div class=&#34;left&#34;&gt;
+      <title>Terms</title>
+      <link>/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/terms/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>External Project</title>
+      <link>/project/external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/external-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Internal Project</title>
+      <link>/project/internal-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/internal-project/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Academic: the website builder for Hugo</title>
+      <link>/hidden/getting-started/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/hidden/getting-started/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or 
+&lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Worked with Digital Analytics for 5 years&lt;/li&gt;
-&lt;li&gt;Lead Analyst @ IMPACT EXTEND&lt;/li&gt;
-&lt;li&gt;Responsible for all data pipelines&lt;/li&gt;
-&lt;li&gt;Moving from digital analytics to data engineering&lt;/li&gt;
-&lt;li&gt;Primarily use R and GCP&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;right&#34;&gt;
-&lt;p&gt;&lt;img src=&#34;superweek.jpg&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;our-team&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Our team&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;workstuff.png&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;stuff-i-am-currently-trying-to-get-better-at-using&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Stuff I am currently trying to get better at using&lt;/h2&gt;
-&lt;div class=&#34;left&#34;&gt;
+&lt;li&gt;👉 
+&lt;a href=&#34;#install&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📚 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View the &lt;strong&gt;documentation&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💬 
+&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Ask a question&lt;/strong&gt; on the forum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👥 
+&lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chat with the &lt;strong&gt;community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐦 Twitter: 
+&lt;a href=&#34;https://twitter.com/source_themes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@source_themes&lt;/a&gt; 
+&lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@GeorgeCushen&lt;/a&gt; 
+&lt;a href=&#34;https://twitter.com/search?q=%23MadeWithAcademic&amp;amp;src=typd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#MadeWithAcademic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💡 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;⬆️ &lt;strong&gt;Updating?&lt;/strong&gt; View the 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Update Guide&lt;/a&gt; and 
+&lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;❤ &lt;strong&gt;Support development&lt;/strong&gt; of Academic:
 &lt;ul&gt;
-&lt;li&gt;Using Python and SQL instead of using R for everything&lt;/li&gt;
-&lt;li&gt;Utilizing Docker&lt;/li&gt;
-&lt;li&gt;Set up plumber API’s to make my life easier&lt;/li&gt;
-&lt;li&gt;Deploying shinyapps to GCP with authentication&lt;/li&gt;
+&lt;li&gt;☕️ 
+&lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Donate a coffee&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💵 
+&lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Become a backer on &lt;strong&gt;Patreon&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🖼️ 
+&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Decorate your laptop or journal with an Academic &lt;strong&gt;sticker&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👕 
+&lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wear the &lt;strong&gt;T-shirt&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👩‍💻 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/contribute/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Contribute&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;right&#34;&gt;
-&lt;p&gt;&lt;img src=&#34;docker.png&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;what-i-am-trying-to-say-is-that-there-is-a-lot-to-grasp-and-that-it-takes-time-to-optimize-your-workflow&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;What i am trying to say is that there is a lot to grasp and that it takes time to optimize your workflow&lt;/h1&gt;
-&lt;/div&gt;
-&lt;div id=&#34;but-now-lets-get-to-the-place-where-we-can-get-to-do-some-cool-stuff&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;But now, lets get to the place where we can get to do some cool stuff!&lt;/h1&gt;
-&lt;/div&gt;
-&lt;div id=&#34;grabbing-different-types-of-data&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Grabbing different types of data&lt;/h1&gt;
-&lt;div id=&#34;sql-servers&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;SQL Servers&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#load libraries
-#library(tidyverse)
-#library(dbi)
-#library(odbc)
+&lt;/li&gt;
+&lt;/ul&gt;
 
-#set up connection object
-con &amp;lt;- DBI::dbConnect(odbc::odbc(),
-                      Driver    = &amp;quot;SQL Server&amp;quot;, 
-                      Server    = &amp;quot;yourserver.database.windows.net&amp;quot;,
-                      Database  = &amp;quot;databasename&amp;quot;,
-                      UID       = &amp;quot;userid&amp;quot;,
-                      PWD       = &amp;quot;password&amp;quot;,
-                      Port      = 1234)
 
-#extract data
-dataset &amp;lt;- as_tibble(
-  tbl(con, &amp;quot;dataset&amp;quot;)%&amp;gt;%
-  head(100) #Get the first 100 rows
-  ) &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ftp-servers&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;FTP Servers&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#library(RCurl)
-syntax &amp;lt;- &amp;quot;ftp://&amp;quot;
-ftpHost &amp;lt;- &amp;quot;ftp.yourserver.com.com&amp;quot;
-ftpUser &amp;lt;- &amp;quot;username&amp;quot;
-ftpPass &amp;lt;- &amp;quot;password&amp;quot;
-folder &amp;lt;- &amp;quot;/folder/&amp;quot; #delete folder if in root
-ftpURL &amp;lt;- paste(syntax,ftpHost,folder,sep = &amp;quot;&amp;quot;)
 
-#Download files function
 
-download &amp;lt;- function(file){
-  fileDownload &amp;lt;- file
-  downloadFtpUrl &amp;lt;- paste(ftpURL,fileDownload, sep = &amp;quot;&amp;quot;)
-  downloadFtpUrlCredentials &amp;lt;- paste(ftpUser,&amp;quot;:&amp;quot;,ftpPass, sep = &amp;quot;&amp;quot;)
-  bin &amp;lt;- getBinaryURL(downloadFtpUrl,userpwd=downloadFtpUrlCredentials)
-  con &amp;lt;- file(fileDownload, open = &amp;quot;wb&amp;quot;)
-  writeBin(bin, con)
-  close(con)}
 
-#Download files
 
-download(&amp;quot;yourfile.csv&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;postgress-database&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;postgress database&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#library(&amp;#39;RPostgreSQL&amp;#39;)
 
-#create connection object
-con &amp;lt;- dbConnect(drv =&amp;quot;RPostgreSQL&amp;quot;, 
-                 user=&amp;quot;&amp;quot;, 
-                 password=&amp;quot;&amp;quot;,
-                 host=&amp;quot;&amp;quot;, 
-                 port=1234, 
-                 dbname=&amp;quot;&amp;quot;)
 
-#extract data
-dataset &amp;lt;- as_tibble(
-  tbl(con, &amp;quot;dataset&amp;quot;)%&amp;gt;%
-  head(100) #Get the first 100 rows
-  ) &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;google-analytics&#34; class=&#34;section level2&#34; data-background-iframe=&#34;https://code.markedmondson.me/googleAnalyticsR/articles/setup.html&#34;&gt;
-&lt;h2&gt;Google Analytics&lt;/h2&gt;
-&lt;/div&gt;
-&lt;div id=&#34;facebook-and-instagram&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Facebook and Instagram&lt;/h2&gt;
-&lt;div class=&#34;left&#34;&gt;
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; data-caption=&#34;Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34;&gt;
+
+
+  &lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;It is &lt;strong&gt;REALLY&lt;/strong&gt; difficult to download Facebook and instagram data&lt;/li&gt;
-&lt;li&gt;Therefore you should seek a third party vendor should you need to get datasources that doesnt have easy to access API’s&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable 
+&lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and 
+&lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - 
+&lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;, 
+&lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&#34;right&#34;&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;p&gt;Academic comes with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can  choose their preferred mode - click the sun/moon icon in the top right of the 
+&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demo&lt;/a&gt; to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/customization/#custom-theme&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;customizable&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Remember, maintaining API work can require a lof of work and could potentially break whereas a vendor are living of maintaining these tools and have the right types of access
-&lt;img src=&#34;stitch.png&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;connect-github-and-cloud-storage-to-your-work&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Connect Github and Cloud storage to your work&lt;/h1&gt;
-&lt;div id=&#34;github&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Github&lt;/h2&gt;
-&lt;div class=&#34;left&#34;&gt;
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Github is the closest thing you get to a “dropbox” for your code.&lt;/li&gt;
-&lt;li&gt;It allows version control and makes sure that your code is always updated&lt;/li&gt;
-&lt;li&gt;From github, you can push you code into other systems and work on the same projects&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Then 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; to help keep track of 
+&lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright 2016-present 
+&lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Released under the 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example journal article</title>
+      <link>/hidden/publication/journal-article/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/hidden/publication/journal-article/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&#34;right&#34;&gt;
-&lt;p&gt;&lt;img src=&#34;github.jpg&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
 &lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example conference paper</title>
+      <link>/hidden/publication/conference-paper/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>/hidden/publication/conference-paper/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;cloud-storage&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Cloud Storage&lt;/h2&gt;
-&lt;div class=&#34;left&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;Cloud storage lets you upload and pull files in a secure environment&lt;/li&gt;
-&lt;li&gt;It has great API’s and can sync directly with bigQuery&lt;/li&gt;
-&lt;li&gt;Thanks to Mark Edmonson, we can also source R code directly from there&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&#34;right&#34;&gt;
-&lt;p&gt;&lt;img src=&#34;cloudstorage.png&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;setting-up-the-configuration&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Setting up the configuration&lt;/h2&gt;
-&lt;div class=&#34;left&#34;&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Set up Github and put you code there&lt;/li&gt;
-&lt;li&gt;Create a bucket in Cloud Storage&lt;/li&gt;
-&lt;li&gt;Create a trigger with cloudbuild where you link to the repo&lt;/li&gt;
-&lt;li&gt;Add cloudbuild.yalm to the folder&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&#34;right&#34;&gt;
-&lt;pre class=&#34;javascript&#34;&gt;&lt;code&gt;steps:
-  - name: gcr.io/cloud-builders/gsutil
-    args: [&amp;quot;-m&amp;quot;, &amp;quot;rsync&amp;quot;, &amp;quot;-r&amp;quot;, &amp;quot;-c&amp;quot;, &amp;quot;-d&amp;quot;, &amp;quot;.&amp;quot;, &amp;quot;gs://yourfolderincloudstorage/ifneededthencreateasubfolder&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;sourcing-from-cloud-storage&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Sourcing from Cloud Storage&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#install.package(&amp;quot;googleCloudStorageR&amp;quot;) if you have not installed it yet
-
-#load the library
-library(googleCloudStorageR)
-
-#Authenticate
-gcs_auth()
-
-googleCloudStorageR::gcs_source(&amp;#39;yoursubfolderifyouhaveone/yourscript.R&amp;#39;, bucket = &amp;#39;yourcreatedbucket&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;use-r-studio-in-the-google-cloud-platform&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Use R studio in the Google Cloud Platform&lt;/h1&gt;
-&lt;div id=&#34;set-up-billing&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;1. Set up billing&lt;/h2&gt;
-&lt;/div&gt;
-&lt;div id=&#34;thank-mark-that-he-build-a-script-that-does-everything-for-you&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;2. Thank Mark that he build a script that does everything for you&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# You need to authenticate with your GCP account before being able to do it
-gce_vm(&amp;quot;yourmachinename&amp;quot;, project =&amp;quot;gar-creds-185213&amp;quot;, zone = &amp;quot;europe-west1-b&amp;quot;,
-       predefined_type = &amp;quot;g1-small&amp;quot;,
-       template = &amp;quot;rstudio&amp;quot;, 
-       username = &amp;quot;username&amp;quot;, 
-       password = &amp;quot;password&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;the-easy-way-to-run-scripts-automatically-from-gcs&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;The easy way to run scripts automatically from GCS&lt;/h2&gt;
-&lt;div class=&#34;left&#34;&gt;
-&lt;p&gt;&lt;img src=&#34;rstudiogcp.png&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;right&#34;&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#set machine to be launched
-library(googleComputeEngineR)
-library(googleCloudStorageR)
-library(googleAuthR)
-
-gar_auth(&amp;quot;/home/username/.httr-oauth&amp;quot;)
-
-GCE_AUTH_FILE=&amp;quot;/home/username/auth.json&amp;quot;
-GCE_DEFAULT_PROJECT_ID=&amp;quot;projectname&amp;quot;
-GCE_DEFAULT_ZONE=&amp;quot;europe-west1-b&amp;quot;
-gcs_global_bucket(&amp;quot;bucketname&amp;quot;)
-BQ_AUTH_FILE=&amp;quot;/home/username/bq.oauth&amp;quot;
-
-vm &amp;lt;- gce_vm(&amp;quot;yourvirtualmachine&amp;quot;)
-
-vm &amp;lt;- gce_ssh_setup(vm,
-                    username = &amp;quot;username&amp;quot;,
-                    key.pub = &amp;quot;/home/username/.ssh/id_rsa.pub&amp;quot;,
-                    key.private = &amp;quot;/home/username/.ssh/id_rsa&amp;quot;)
-
-runme &amp;lt;- &amp;quot;Rscript -e \&amp;quot;googleAuthR::gar_gce_auth();googleCloudStorageR::gcs_source(&amp;#39;cloudstoragefolder/script.r&amp;#39;, bucket = &amp;#39;bucket&amp;#39;)\&amp;quot;&amp;quot;
-docker_cmd(vm, 
-           cmd = &amp;quot;exec&amp;quot;, 
-           args = c(&amp;quot;rstudio&amp;quot;, runme), 
-           wait = TRUE,
-           capture_text = FALSE)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;automating-the-script-to-run-at-a-specific-time&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Automating the script to run at a specific time&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Remember - your if you turn of the machine, the cronjob settings will stop working&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;cronjobs.png&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;sending-data-to-bigquery&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Sending data to bigQuery&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#library(bigQueryR)
-
-# First Create the dataset
-
-# bqr_create_table(projectId = &amp;quot;your project id&amp;quot;,
-#                  datasetId = &amp;quot;dataset&amp;quot;, &amp;quot;your table&amp;quot;, your dataframe,
-#                  timePartitioning = FALSE, expirationMs = 0L)
-
-bqr_upload_data(projectId = &amp;quot;your project id&amp;quot;,
-                datasetId = &amp;quot;dataset&amp;quot;, &amp;quot;your table&amp;quot;, yourdataframe,
-                overwrite = FALSE, #True to overwrite your table
-                wait = TRUE, autodetect = FALSE,
-                maxBadRecords = 1000)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;final-thoughts&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Final thoughts&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;This is not the most stable way to do things, but the easiest&lt;/li&gt;
-&lt;li&gt;There is so many ways you can work with making your data flow&lt;/li&gt;
-&lt;li&gt;Start small and build your way up from there&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div id=&#34;questions&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Questions?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;citation&#34;&gt;@dannymawani&lt;/span&gt; (Twitter / Linkedin)&lt;/li&gt;
-&lt;li&gt;www.mawani.dk&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;mailto:dmo@impact.dk&#34; class=&#34;email&#34;&gt;dmo@impact.dk&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

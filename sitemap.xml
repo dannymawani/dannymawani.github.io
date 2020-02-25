@@ -1,186 +1,280 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/</loc>
-      <lastmod>2019-06-08T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/hidden/courses/example/example1/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/talk/r-on-google-cloud-platform/</loc>
-      <lastmod>2019-06-08T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/hidden/courses/example/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/talk/</loc>
-      <lastmod>2019-06-08T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/hidden/courses/example/example2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/post/measurement-protocol-usecases/</loc>
-      <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/post/measurement-protocol-usecases/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/post/</loc>
-      <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/hidden/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/post/detect-missing-data-with-r-a-google-analytics-example/</loc>
-      <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/post/pull-data-from-multiple-ga-properties/</loc>
-      <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/hidden/writing-technical-content/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/post/source-r-with-github/</loc>
-      <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/authors/admin/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/talk/superweek-2019/</loc>
-      <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/talk/blackfriday/</loc>
-      <lastmod>2018-12-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/tags/gcp/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/talk/ip-anonymization-while-excluding-internal-trafic/</loc>
-      <lastmod>2018-12-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/tags/google-cloud/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/talk/r-introduction-class-measurecamp/</loc>
-      <lastmod>2018-12-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/talk/gdpr-with-google-tag-manager/</loc>
-      <lastmod>2018-12-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/talk/superweek-2019/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/privacy/</loc>
-      <lastmod>2018-06-28T00:00:00+02:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/talk/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/author/admin/</loc>
-    </url>
-    
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/slides/mccph19/presentation/</loc>
-    </url>
-    
+  <url>
+    <loc>/hidden/courses/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/authors/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/publication_types/3/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/author/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/hidden/publication/preprint/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/publication_types/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/hidden/publication/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/slides/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/tags/source-themes/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/tags/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/post/detect-missing-data-with-r-a-google-analytics-example/</loc>
+    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>http://dannymawani.github.io/authors/admin/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/post/pull-data-from-multiple-ga-properties/</loc>
+    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/source-r-with-github/</loc>
+    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/hidden/jupyter/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/example/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/automation/</loc>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/r-on-google-cloud-platform/</loc>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/analytics/</loc>
+    <lastmod>2018-12-01T10:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/blackfriday/</loc>
+    <lastmod>2018-12-01T10:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gtm/</loc>
+    <lastmod>2018-12-01T10:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/loadspeed/</loc>
+    <lastmod>2018-12-01T10:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/education/</loc>
+    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gdpr/</loc>
+    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/ip-anonymization-while-excluding-internal-trafic/</loc>
+    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/gdpr-with-google-tag-manager/</loc>
+    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/r-introduction-class-measurecamp/</loc>
+    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/privacy/</loc>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/terms/</loc>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/deep-learning/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/demo/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/external-project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/internal-project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/academic/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/hidden/getting-started/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/demo/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/2/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/hidden/publication/journal-article/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/robert-ford/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/1/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/hidden/publication/conference-paper/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
   
 </urlset>

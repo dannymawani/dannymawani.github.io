@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GDPR | DMH Analytics</title>
+    <link>/tags/gdpr/</link>
+      <atom:link href="/tags/gdpr/index.xml" rel="self" type="application/rss+xml" />
+    <description>GDPR</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>`©`Danny Mawani Holmgaard 2018</copyright><lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>GDPR</title>
+      <link>/tags/gdpr/</link>
+    </image>
+    
+    <item>
+      <title>GDPR with Google Tag Manager</title>
+      <link>/talk/ip-anonymization-while-excluding-internal-trafic/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/talk/ip-anonymization-while-excluding-internal-trafic/</guid>
+      <description>&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/8L7n7nX0ZUINKB&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/gdpr-within-google-tag-manager-measurecamp-2018&#34; title=&#34;GDPR within Google Tag Manager - Measurecamp 2018&#34; target=&#34;_blank&#34;&gt;GDPR within Google Tag Manager - Measurecamp 2018&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to anonymize IP adresses and still be able to exclude internal traffic</title>
+      <link>/talk/gdpr-with-google-tag-manager/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/talk/gdpr-with-google-tag-manager/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://analytics.mawani.dk/excluding-internal-traffic-anonymizing-ip-adresses-google-analytics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/6Vr0jPcBgPD6dd&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/anonymization-of-ip-adresses-with-google-tag-manager&#34; title=&#34;Anonymization of IP adresses with Google Tag Manager&#34; target=&#34;_blank&#34;&gt;Anonymization of IP adresses with Google Tag Manager&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
