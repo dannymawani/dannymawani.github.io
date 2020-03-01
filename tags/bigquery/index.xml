@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R | DMH Analytics</title>
-    <link>/tags/r/</link>
-      <atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
-    <description>R</description>
+    <title>bigQuery | DMH Analytics</title>
+    <link>/tags/bigquery/</link>
+      <atom:link href="/tags/bigquery/index.xml" rel="self" type="application/rss+xml" />
+    <description>bigQuery</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
-      <title>R</title>
-      <link>/tags/r/</link>
+      <title>bigQuery</title>
+      <link>/tags/bigquery/</link>
     </image>
     
     <item>
@@ -150,29 +150,6 @@ upload &amp;lt;- upload[order(upload$daysSinceUpdate, decreasing=F),]
 &lt;p&gt;If you do consider automating grabbing the metadata from bigQuery, I recommend you to read 
 &lt;a href=&#34;https://code.markedmondson.me/googleCloudRunner/articles/usecases.html#build-an-rmd-on-a-schedule-and-host-its-html-on-cloud-storage&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mark&amp;rsquo;s post on how to update it automatically using Google Cloud Build&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Let me know if this post is easy to follow or if it needs additional explanation by leaving a comment.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>R on the Google Cloud Platform - Scheduling tasks</title>
-      <link>/talk/r-on-google-cloud-platform/</link>
-      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>/talk/r-on-google-cloud-platform/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;the slides&lt;/strong&gt;&lt;/p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 80.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;../../slides/r-on-gcp-slides&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
- &lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>R introduction class for measurecamp</title>
-      <link>/talk/r-introduction-class-measurecamp/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>/talk/r-introduction-class-measurecamp/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;the slides&lt;/strong&gt;&lt;/p&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/uz2aLKQKZ2CSiB&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/rclass&#34; title=&#34;Rclass&#34; target=&#34;_blank&#34;&gt;Rclass&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:a2aa2406-42b7-4030-8bb9-fa53525d20c8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;full link here&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

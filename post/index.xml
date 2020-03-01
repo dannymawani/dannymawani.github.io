@@ -5,12 +5,153 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Make sure your data is up to date in bigquery</title>
+      <link>/post/bigquery-monitoring-with-metadata/</link>
+      <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/post/bigquery-monitoring-with-metadata/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#the-service-account-key&#34;&gt;The service account key&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#building-the-code&#34;&gt;Building the code&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#optional-r-markdown&#34;&gt;Optional R Markdown&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#conclusion-and-final-thoughts&#34;&gt;Conclusion and final thoughts&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;In my work, data pipelines are nesscesary in order to provide clients with the correct data. unfortunately sometimes due to changes in the API, access being removed, or unexpected timeouts and crashes ends up having the data not being updated properly meaning that the marketing automation systems and dashboards are not updated.&lt;/p&gt;
+&lt;p&gt;We almost store all relevant data in BigQuery, while the same data can be pushed to many other platforms such marketing automation systems, SQL databases etc. Because of this, we can utilize the metadata from BigQuery and see if the datasets are updated at the right time.&lt;/p&gt;
+&lt;p&gt;At the moment the data is compiled to an R markdown document which makes anyone in our BI team to easily see if the data is up to date, should something be wrong, but use it in any way you see fit.&lt;/p&gt;
+&lt;h3 id=&#34;the-service-account-key&#34;&gt;The service account key&lt;/h3&gt;
+&lt;p&gt;I could spend a few hours writing down how to create a service account key in the Google Cloud Platform, however I think it would be smarter to link it right here instead: 
+&lt;a href=&#34;https://cloud.google.com/iam/docs/creating-managing-service-account-keys&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://cloud.google.com/iam/docs/creating-managing-service-account-keys&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Once it is created, put it in the directory you are working on in R, and open it up. It should look like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;{
+  &amp;quot;type&amp;quot;: &amp;quot;service_account&amp;quot;,
+  &amp;quot;project_id&amp;quot;: &amp;quot;youproject&amp;quot;,
+  &amp;quot;private_key_id&amp;quot;: &amp;quot;keyid1+239123&amp;quot;,
+  &amp;quot;private_key&amp;quot;: &amp;quot;-----BEGIN PRIVATE KEY-----\nadfsdfsdfdsfdsfsdfaenIkd\nTVaeeeOZIODyN3ZYWxLwersffsdfdsb4we71lbHrg\nkJwHn8osrhssgfhCxp8y15YV8jrDof+TChTDe5wIj5WPvJO8\ndyBFchZx0ptbakmPb/ybeU7gKi3yPO29Mgoz4Cb47gNPvuZX82ic3dYE7YMEO1VF\nyfc1zHF6UJEAdrMSe+YO5oiGABemGj8FTNb+0Q0XurC4da3Qvwmz43OaICNTGzgI\nmkHB6fqsvSSVDi0agPE68wVGIDSEew9kEGUeAMw/e+T7NIY8z2PYJ5Dv6RWj/+b9\nh1XHiEwBAgMBAAECggEAISrTAqBfXFX966X8CVPjd3C198Yn/oyMssdfdsfdsÅQelFF\nJKxAt/Pnyr2xDYZLWgK3QChYibhufCwHq6V7BiWSO7F2PluuJedr9scG7u+t5se7\nr7gpyhTZIxljRsfdgsfgmEGDQz1wVpYnghySNHIHSWQcRG\nARYkv9v9LmwStA20Tr3BGEa1t3GF+4DAnW5DIP50TwzHv0wiG0+5vX3bWc+x/NR0\njAJKsDcoMzNtIqieLm7cizjS9Ku+rdHaelN8dt51jVAHATQ4oXwEyA0SpbkaLbqx\nvU+Y4U3plPZ1uAWHAtSI6fsrqOKpWA3g6MHVDiJQKQKBgQDGqbi62wq6vWETzByo\nOoiVvJLszm8iYA7LkgKPsJsfVvd+HJcv7uldL04ZaUIGvZ24shbRLN78Z0AnRzxX\nXZF3Vn64ROfxDSkcYOitipRdxBlsdfgrfbbZqeOvPVSy3qMn1Bqlf\ndFNvEtcMQ6YhRbAjbjgvlgiBTQKBgQC6yseYbmiJyRASBcyXcaguuvoebnn7l8r8\n2S1A7wTt1Sy5iPn1RfmUP4DK09y4zNtRYtNwNhu/VhB20MU8Na9ImKBVuvA3O0Ic\nIUeRFgDI2M3u4rGkLlsfgdgdf7f9oRUhPefGIAcNiqm3SACB2w9T\nuo5yMGIbhQKBgQCSkR7wBLCqysfdgfdgsdfO1X6U4kvCyG8oV1chsdfgfdgO6sSveufbbYGApKhpy2R6fydxNQKBgBHg\nØØØØØkzEA1exc3HfaaB5ayGz5LvLKP5hwe2Lt47HL6TFg\nw9t5Ui59jhXQ5Q9eE+hesvmBanver/UBOlgoQur11L+H8nhD9vEQOLOThyA2xmha\nS6V0sacUQ3Fq+0N6zTH+åååååøøøåå+q4y7JQSQiHd23\n22e4PAfX3Df+8860Axrx6fkImbvKxuOZ+uYpwhYMpPdgvukuAqXCHDcG5Fiho28g\n27JHFzQql0pn9Pj4O+WkUOs0rX9rcPjvV9h6Jc/YEWV6YwXMnEkKRaMj44+x7a69\npPfrTO7pBJAquiiU3dCmVDU=\n-----END PRIVATE KEY-----\n&amp;quot;,
+  &amp;quot;client_email&amp;quot;: &amp;quot;yourserviceaccoutname@yourproject.iam.gserviceaccount.com&amp;quot;,
+  &amp;quot;client_id&amp;quot;: &amp;quot;12345678910&amp;quot;,
+  &amp;quot;auth_uri&amp;quot;: &amp;quot;https://accounts.google.com/o/oauth2/auth&amp;quot;,
+  &amp;quot;token_uri&amp;quot;: &amp;quot;https://oauth2.googleapis.com/token&amp;quot;,
+  &amp;quot;auth_provider_x509_cert_url&amp;quot;: &amp;quot;https://www.googleapis.com/oauth2/v1/certs&amp;quot;,
+  &amp;quot;client_x509_cert_url&amp;quot;: &amp;quot;https://www.googleapis.com/robot/v1/metadata/x509/yourserviceaccountname%40yourproject.iam.gserviceaccount.com&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here you need to add the email you see under &lt;code&gt; &amp;quot;client_email&amp;quot;: &amp;quot;yourserviceaccoutname@yourproject.iam.gserviceaccount.com&amp;quot;&lt;/code&gt; and add that to all the BigQuery projects you want to monitor:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;iamaccess.png&#34; alt=&#34;IAM ACESS&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;building-the-code&#34;&gt;Building the code&lt;/h3&gt;
+&lt;h5 id=&#34;1-authenticate-and-load-libraries&#34;&gt;1. authenticate and load libraries**&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#libraries
+library(bigQueryR)
+library(purrr)
+library(dplyr)
+
+#auth
+bigQueryR::bqr_auth(&amp;quot;yourauthfile.json&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;2-get-a-list-of-all-projects-and-datasets&#34;&gt;2. Get a list of all projects and datasets&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#get projects
+projects &amp;lt;- bigQueryR::bqr_list_projects()
+#get datasets
+datasets &amp;lt;- lapply(projects$projectId,bqr_list_datasets)
+datasets &amp;lt;- bind_rows(datasets)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will give us two tables that show us all the projects and datasets that the service account have access to. We need this information to list all avaliable tables.&lt;/p&gt;
+&lt;h5 id=&#34;3-get-a-list-of-all-tables-to-extract-metadata&#34;&gt;3. Get a list of all tables to extract metadata&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#get tables
+listTables &amp;lt;- function(id,dataset){
+bqr_list_tables(projectId = id,
+                datasetId = dataset, maxResults = -1)
+}
+
+tables &amp;lt;- mapply(listTables,datasets$projectId,datasets$datasetId)
+tablesCombined &amp;lt;- bind_rows(tables)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then we can use these lines in order to extract the metadata:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#get meta
+tablesMeta &amp;lt;- function(project,dataset,table){
+bqr_table_meta(projectId = project,
+               datasetId = dataset, table)
+}
+
+tablesMeta &amp;lt;- mapply(tablesMeta,tablesCombined$projectId,tablesCombined$datasetId,tablesCombined$tableId)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It can take some time if you have a lot of projects. If you want to speed up the process you can process it with the future package instead to run it in parallel: 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/future/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://cran.r-project.org/web/packages/future/index.html&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once it is done, we get a list of which gives us a list of objects with metadata:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;bqmeta.png&#34; alt=&#34;BQ META&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As seen, it isn&amp;rsquo;t great for working with yet, so we need to take the information we need for each list object and stitch it together in a format that is more fit for working with.&lt;/p&gt;
+&lt;p&gt;The process will be to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Get the number of rows in the listobject&lt;/li&gt;
+&lt;li&gt;create an empty dataframe with column names&lt;/li&gt;
+&lt;li&gt;extract the data we need for each list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;#create a dataframe with the right information for bq
+#get the total rows
+i &amp;lt;- seq_along(1:NROW(tablesMeta)) 
+#create an empty dataframe with column headers
+bqUpdate &amp;lt;- setNames(data.frame(matrix(ncol = 7, nrow = 0)), c(&amp;quot;id&amp;quot;,&amp;quot;projectId&amp;quot;,&amp;quot;datasetId&amp;quot;,&amp;quot;creationTime&amp;quot;,&amp;quot;lastModifiedTime&amp;quot;,&amp;quot;type&amp;quot;,&amp;quot;location&amp;quot;))
+
+#create function for looping for appending metadata
+combineMetaData &amp;lt;- function(i){
+add_row(bqUpdate,
+       id = tablesMeta[[i]][[&amp;quot;id&amp;quot;]],
+       projectId = tablesMeta[[i]][[&amp;quot;tableReference&amp;quot;]][[&amp;quot;projectId&amp;quot;]],
+       datasetId = tablesMeta[[i]][[&amp;quot;tableReference&amp;quot;]][[&amp;quot;datasetId&amp;quot;]],
+       creationTime = tablesMeta[[i]][[&amp;quot;creationTime&amp;quot;]],
+       lastModifiedTime = tablesMeta[[i]][[&amp;quot;lastModifiedTime&amp;quot;]],
+       type = tablesMeta[[i]][[&amp;quot;type&amp;quot;]],
+       location = tablesMeta[[i]][[&amp;quot;location&amp;quot;]]
+       )
+}
+
+#run the function and combine it
+upload &amp;lt;- map(i,combineMetaData)
+upload &amp;lt;- bind_rows(upload)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally format the table a little, so it is more readable:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;upload$creationTime &amp;lt;- format(as.POSIXct(as.double(upload$creationTime)/1000, origin = &amp;quot;1970-01-01&amp;quot;, tz = &amp;quot;GMT-1&amp;quot;),&amp;quot;%Y-%m-%d %H:%M:%S&amp;quot; )
+upload$lastModifiedTime &amp;lt;- format(as.POSIXct(as.double(upload$lastModifiedTime)/1000, origin = &amp;quot;1970-01-01&amp;quot;, tz = &amp;quot;GMT-1&amp;quot;),&amp;quot;%Y-%m-%d %H:%M:%S&amp;quot; )
+upload$dataset &amp;lt;- gsub(&amp;quot;.*\\.&amp;quot;,&amp;quot;&amp;quot;,upload$id) 
+upload$daysSinceUpdate &amp;lt;- Sys.Date()-as.Date(as.character(upload$lastModifiedTime), format=&amp;quot;%Y-%m-%d&amp;quot;)
+upload &amp;lt;- upload[order(upload$daysSinceUpdate, decreasing=F),]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The output should look something like this:
+&lt;img src=&#34;bqjobdone.png&#34; alt=&#34;bqtableextracted&#34;&gt;&lt;/p&gt;
+&lt;p&gt;And voila, you now have a list of all your tables in BigQuery, as well as being able to see how many days it is since they were last updated.&lt;/p&gt;
+&lt;h3 id=&#34;optional-r-markdown&#34;&gt;Optional R Markdown&lt;/h3&gt;
+&lt;p&gt;In our company, the persons in charge of marketing automation and data visualization, wanted to be able to pinpoint if there should be any issues with having updated data in their systems, as the first thing they look through. I therefore created a 
+&lt;a href=&#34;https://rmarkdown.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R markdown document&lt;/a&gt;, that they could use by visiting a page stored in 
+&lt;a href=&#34;https://cloud.google.com/storage/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Cloud Storage&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;mqmd.png&#34; alt=&#34;bqmd&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This makes it possible to see the tables who are not updated within the last day, which one who are updated, and a list of all tables. It even colors table in different colors depending on how long it has been since the last update.&lt;/p&gt;
+&lt;p&gt;Tables not updated are not nesscesarily a bad thing, as some static tables are needed to benchmark. I do however recommend to look at some of the tables once in a while to see if it would make sense to delete them.&lt;/p&gt;
+&lt;p&gt;Below is the code that I used to generate it:&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/dannymawani/a38d2a5717a89e7218f6d91c7f465bdc.js&#34;&gt;&lt;/script&gt;
+&lt;h3 id=&#34;conclusion-and-final-thoughts&#34;&gt;Conclusion and final thoughts&lt;/h3&gt;
+&lt;p&gt;This post displays a way to monitor your bigQuery tables. If you are running a lot of jobs, it can make sense to use this as a quick way to see if some tables are not updated, should some of your systems fail. For building data pipelines using cronjobs, og cloud builds etc. I do recommend take a look at 
+&lt;a href=&#34;https://cloud.google.com/products/operations&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stackdriver in GCP&lt;/a&gt;, as it can monitor failed jobs and send textmessages, slack notifications or emails with customized dynamic text. I will try and write a guide about this in the future.&lt;/p&gt;
+&lt;p&gt;If you do consider automating grabbing the metadata from bigQuery, I recommend you to read 
+&lt;a href=&#34;https://code.markedmondson.me/googleCloudRunner/articles/usecases.html#build-an-rmd-on-a-schedule-and-host-its-html-on-cloud-storage&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mark&amp;rsquo;s post on how to update it automatically using Google Cloud Build&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Let me know if this post is easy to follow or if it needs additional explanation by leaving a comment.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Detect missing data in GA with R</title>

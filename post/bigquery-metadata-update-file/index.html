@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Introduction on scheduling tasks of Google Cloud">
+  <meta name="description" content="Using R to monitor and extract metadata from all tables to see if they are updated">
 
   
-  <link rel="alternate" hreflang="en-us" href="../../talk/r-on-google-cloud-platform/">
+  <link rel="alternate" hreflang="en-us" href="../../post/bigquery-metadata-update-file/">
 
   
 
@@ -219,7 +219,7 @@
   <link rel="icon" type="image/png" href="../../images/icon_hu24c10c31105209eaf5ee0939bfab76e0_15990_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="../../images/icon_hu24c10c31105209eaf5ee0939bfab76e0_15990_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="../../talk/r-on-google-cloud-platform/">
+  <link rel="canonical" href="../../post/bigquery-metadata-update-file/">
 
   
   
@@ -236,23 +236,28 @@
   <meta property="twitter:creator" content="@dannymawani">
   
   <meta property="og:site_name" content="DMH Analytics">
-  <meta property="og:url" content="/talk/r-on-google-cloud-platform/">
-  <meta property="og:title" content="R on the Google Cloud Platform - Scheduling tasks | DMH Analytics">
-  <meta property="og:description" content="Introduction on scheduling tasks of Google Cloud"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="og:url" content="/post/bigquery-metadata-update-file/">
+  <meta property="og:title" content="Make sure your data is up to date in bigquery | DMH Analytics">
+  <meta property="og:description" content="Using R to monitor and extract metadata from all tables to see if they are updated"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2019-06-08T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-02-28T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2019-06-08T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-02-28T00:00:00&#43;00:00">
   
 
   
 
 
-
-  
     
+
+
+
+
+
+
+  
 
 
 
@@ -260,32 +265,34 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Event",
+  "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/talk/r-on-google-cloud-platform/"
+    "@id": "/post/bigquery-metadata-update-file/"
   },
-  "name": "R on the Google Cloud Platform - Scheduling tasks",
+  "headline": "Make sure your data is up to date in bigquery",
   
-  "location": {
-    "@type": "Place",
-    "name": "Copenhagen"
-  },
+  "datePublished": "2020-02-28T00:00:00Z",
+  "dateModified": "2020-02-28T00:00:00Z",
   
-  
-  "startDate": "2019-06-08T00:00:00Z",
-  
-  "endDate": "2019-06-08T00:00:00Z",
-  
-  
-  "performer": {
+  "author": {
     "@type": "Person",
     "name": "Danny Mawani Holmgaard"
   },
   
-  "description": "Introduction on scheduling tasks of Google Cloud"
+  "publisher": {
+    "@type": "Organization",
+    "name": "DMH Analytics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/logo_hufab7a940fa764c5ef23372a507770803_2994184_192x192_fit_lanczos_2.png"
+    }
+  },
+  "description": "Using R to monitor and extract metadata from all tables to see if they are updated"
 }
 </script>
+
+  
 
   
 
@@ -329,7 +336,7 @@
 
 
 
-  <title>R on the Google Cloud Platform - Scheduling tasks | DMH Analytics</title>
+  <title>Make sure your data is up to date in bigquery | DMH Analytics</title>
 
 </head>
 
@@ -601,7 +608,7 @@
 </nav>
 
 
-  <div class="pub">
+  <article class="article">
 
   
 
@@ -622,7 +629,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>R on the Google Cloud Platform - Scheduling tasks</h1>
+  <h1>Make sure your data is up to date in bigquery</h1>
 
   
 
@@ -649,16 +656,29 @@
   
 
   
+  <span class="article-date">
+    
+    
+      
+    
+    2020-02-28
+  </span>
+  
 
   
 
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
   
 
   
   
   
   <span class="middot-divider"></span>
-  <a href="../../talk/r-on-google-cloud-platform/#disqus_thread"></a>
+  <a href="../../post/bigquery-metadata-update-file/#disqus_thread"></a>
   
 
   
@@ -679,63 +699,6 @@
 
 
 
-
-<div class="btn-links mb-3">
-  
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="http://rpubs.com/dannymawani/mc2019cph" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://twitter.com/dannymawani" target="_blank" rel="noopener">
-    <i class="fab fa-twitter mr-1"></i>
-    Follow
-  </a>
-
-
-</div>
 
 
   
@@ -745,65 +708,47 @@
 
   <div class="article-container">
 
-    
-      <h3>Abstract</h3>
-      <p class="pub-abstract">This is how we used to do, however I recommend using cloud build in the future to handle these things.</p>
-    
-
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Date</div>
-          <div class="col-12 col-md-9">
-            2019-06-08 00:00 &mdash; 00:00
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Event</div>
-          <div class="col-12 col-md-9">
-            <a href="https://measurecamp.org" target="_blank" rel="noopener">
-            Measurecamp Copenhagen
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Location</div>
-          <div class="col-12 col-md-9">Copenhagen</div>
-          
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    <div class="space-below"></div>
-
     <div class="article-style">
-      <p><strong>the slides</strong></p>
-<div style="position: relative; padding-bottom: 80.25%; height: 0; overflow: hidden;">
-  <iframe src="../../slides/r-on-gcp-slides" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
- </div>
+      <h2>Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#the-service-account-key">The service account key</a></li>
+        <li><a href="#building-the-code">Building the code</a></li>
+        <li><a href="#optional-r-markdown">Optional R Markdown</a></li>
+        <li><a href="#additional">additional</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<h3 id="introduction">Introduction</h3>
+<p>In my work, data pipelines are nesscesary in order to provide clients with the correct data. unfortunately sometimes due to changes in the API, access being removed, or unexpected timeouts and crashes ends up having the data not being updated properly meaning that the marketing automation systems and dashboards are not updated.</p>
+<p>We almost store all relevant data in BigQuery, while the same data can be pushed to many other platforms such marketing automation systems, SQL databases etc. Because of this, we can utilize the metadata from BigQuery and see if the datasets are updated at the right time.</p>
+<p>At the moment the data is compiled to an R markdown document which makes anyone in our BI team to easily see if the data is up to date, should something be wrong, but use it in any way you see fit.</p>
+<h3 id="the-service-account-key">The service account key</h3>
+<p>I could spend a few hours writing down how to create a service account key in the Google Cloud Platform, however I think it would be smarter to link it right here instead: 
+<a href="https://cloud.google.com/iam/docs/creating-managing-service-account-keys" target="_blank" rel="noopener">https://cloud.google.com/iam/docs/creating-managing-service-account-keys</a></p>
+<p>Once it is created, put it in the directory you are working on in R, and open it up. It should look like this:</p>
+<pre><code class="language-javascript">{
+  &quot;type&quot;: &quot;service_account&quot;,
+  &quot;project_id&quot;: &quot;youproject&quot;,
+  &quot;private_key_id&quot;: &quot;keyid1+239123&quot;,
+  &quot;private_key&quot;: &quot;-----BEGIN PRIVATE KEY-----\nadfsdfsdfdsfdsfsdfaenIkd\nTVaeeeOZIODyN3ZYWxLwersffsdfdsb4we71lbHrg\nkJwHn8osrhssgfhCxp8y15YV8jrDof+TChTDe5wIj5WPvJO8\ndyBFchZx0ptbakmPb/ybeU7gKi3yPO29Mgoz4Cb47gNPvuZX82ic3dYE7YMEO1VF\nyfc1zHF6UJEAdrMSe+YO5oiGABemGj8FTNb+0Q0XurC4da3Qvwmz43OaICNTGzgI\nmkHB6fqsvSSVDi0agPE68wVGIDSEew9kEGUeAMw/e+T7NIY8z2PYJ5Dv6RWj/+b9\nh1XHiEwBAgMBAAECggEAISrTAqBfXFX966X8CVPjd3C198Yn/oyMssdfdsfdsÅQelFF\nJKxAt/Pnyr2xDYZLWgK3QChYibhufCwHq6V7BiWSO7F2PluuJedr9scG7u+t5se7\nr7gpyhTZIxljRsfdgsfgmEGDQz1wVpYnghySNHIHSWQcRG\nARYkv9v9LmwStA20Tr3BGEa1t3GF+4DAnW5DIP50TwzHv0wiG0+5vX3bWc+x/NR0\njAJKsDcoMzNtIqieLm7cizjS9Ku+rdHaelN8dt51jVAHATQ4oXwEyA0SpbkaLbqx\nvU+Y4U3plPZ1uAWHAtSI6fsrqOKpWA3g6MHVDiJQKQKBgQDGqbi62wq6vWETzByo\nOoiVvJLszm8iYA7LkgKPsJsfVvd+HJcv7uldL04ZaUIGvZ24shbRLN78Z0AnRzxX\nXZF3Vn64ROfxDSkcYOitipRdxBlsdfgrfbbZqeOvPVSy3qMn1Bqlf\ndFNvEtcMQ6YhRbAjbjgvlgiBTQKBgQC6yseYbmiJyRASBcyXcaguuvoebnn7l8r8\n2S1A7wTt1Sy5iPn1RfmUP4DK09y4zNtRYtNwNhu/VhB20MU8Na9ImKBVuvA3O0Ic\nIUeRFgDI2M3u4rGkLlsfgdgdf7f9oRUhPefGIAcNiqm3SACB2w9T\nuo5yMGIbhQKBgQCSkR7wBLCqysfdgfdgsdfO1X6U4kvCyG8oV1chsdfgfdgO6sSveufbbYGApKhpy2R6fydxNQKBgBHg\nØØØØØkzEA1exc3HfaaB5ayGz5LvLKP5hwe2Lt47HL6TFg\nw9t5Ui59jhXQ5Q9eE+hesvmBanver/UBOlgoQur11L+H8nhD9vEQOLOThyA2xmha\nS6V0sacUQ3Fq+0N6zTH+åååååøøøåå+q4y7JQSQiHd23\n22e4PAfX3Df+8860Axrx6fkImbvKxuOZ+uYpwhYMpPdgvukuAqXCHDcG5Fiho28g\n27JHFzQql0pn9Pj4O+WkUOs0rX9rcPjvV9h6Jc/YEWV6YwXMnEkKRaMj44+x7a69\npPfrTO7pBJAquiiU3dCmVDU=\n-----END PRIVATE KEY-----\n&quot;,
+  &quot;client_email&quot;: &quot;yourserviceaccoutname@yourproject.iam.gserviceaccount.com&quot;,
+  &quot;client_id&quot;: &quot;12345678910&quot;,
+  &quot;auth_uri&quot;: &quot;https://accounts.google.com/o/oauth2/auth&quot;,
+  &quot;token_uri&quot;: &quot;https://oauth2.googleapis.com/token&quot;,
+  &quot;auth_provider_x509_cert_url&quot;: &quot;https://www.googleapis.com/oauth2/v1/certs&quot;,
+  &quot;client_x509_cert_url&quot;: &quot;https://www.googleapis.com/robot/v1/metadata/x509/yourserviceaccountname%40yourproject.iam.gserviceaccount.com&quot;
+}
+</code></pre>
+<p>Here you need to add the email you see under <code> &quot;client_email&quot;: &quot;yourserviceaccoutname@yourproject.iam.gserviceaccount.com&quot;</code> and add that to all the BigQuery projects you want to monitor</p>
+<h3 id="building-the-code">Building the code</h3>
+<h3 id="optional-r-markdown">Optional R Markdown</h3>
+<h3 id="additional">additional</h3>
+
     </div>
 
     
@@ -814,9 +759,7 @@
   
   <a class="badge badge-light" href="../../tags/r/">R</a>
   
-  <a class="badge badge-light" href="../../tags/gcp/">GCP</a>
-  
-  <a class="badge badge-light" href="../../tags/google-cloud/">Google Cloud</a>
+  <a class="badge badge-light" href="../../tags/bigquery/">bigQuery</a>
   
 </div>
 
@@ -833,7 +776,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/talk/r-on-google-cloud-platform/&amp;text=R%20on%20the%20Google%20Cloud%20Platform%20-%20Scheduling%20tasks" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/bigquery-metadata-update-file/&amp;text=Make%20sure%20your%20data%20is%20up%20to%20date%20in%20bigquery" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -846,7 +789,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/talk/r-on-google-cloud-platform/&amp;t=R%20on%20the%20Google%20Cloud%20Platform%20-%20Scheduling%20tasks" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/bigquery-metadata-update-file/&amp;t=Make%20sure%20your%20data%20is%20up%20to%20date%20in%20bigquery" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -859,7 +802,7 @@
       
       
       <li>
-        <a href="mailto:?subject=R%20on%20the%20Google%20Cloud%20Platform%20-%20Scheduling%20tasks&amp;body=/talk/r-on-google-cloud-platform/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Make%20sure%20your%20data%20is%20up%20to%20date%20in%20bigquery&amp;body=/post/bigquery-metadata-update-file/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -872,7 +815,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/talk/r-on-google-cloud-platform/&amp;title=R%20on%20the%20Google%20Cloud%20Platform%20-%20Scheduling%20tasks" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/bigquery-metadata-update-file/&amp;title=Make%20sure%20your%20data%20is%20up%20to%20date%20in%20bigquery" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -885,7 +828,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=R%20on%20the%20Google%20Cloud%20Platform%20-%20Scheduling%20tasks%20/talk/r-on-google-cloud-platform/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=Make%20sure%20your%20data%20is%20up%20to%20date%20in%20bigquery%20/post/bigquery-metadata-update-file/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -898,7 +841,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/talk/r-on-google-cloud-platform/&amp;title=R%20on%20the%20Google%20Cloud%20Platform%20-%20Scheduling%20tasks" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/post/bigquery-metadata-update-file/&amp;title=Make%20sure%20your%20data%20is%20up%20to%20date%20in%20bigquery" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1062,6 +1005,8 @@
     <h3>Related</h3>
     <ul>
       
+      <li><a href="../../talk/r-on-google-cloud-platform/">R on the Google Cloud Platform - Scheduling tasks</a></li>
+      
       <li><a href="../../talk/r-introduction-class-measurecamp/">R introduction class for measurecamp</a></li>
       
     </ul>
@@ -1071,7 +1016,7 @@
 
 
   </div>
-</div>
+</article>
 
       
 
