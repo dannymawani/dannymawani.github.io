@@ -5,12 +5,110 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 21 Sep 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Connecting to Snowflake With R</title>
+      <link>/post/connecting-to-snowflake-with-r/</link>
+      <pubDate>Tue, 21 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>/post/connecting-to-snowflake-with-r/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#usecases&#34;&gt;Usecases&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#how-to-use-the-container&#34;&gt;How to use the container&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#rounding-things-up&#34;&gt;Rounding things up&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;As my organization 
+&lt;a href=&#34;https://www.lederne.dk/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lederne&lt;/a&gt; are in a journey of switching from on-prem systems into 
+&lt;a href=&#34;https://www.snowflake.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Snowflake&lt;/a&gt; as our dataplatform, I have looked far and wide in order to find a production ready docker image that supports using R with 
+&lt;a href=&#34;https://www.snowflake.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Snowflake&lt;/a&gt;. As I could not find anything in my search, I decided to build an image myself. Thankfully a lot of the driver setup was already build for a Python image created by 
+&lt;a href=&#34;https://github.com/zoharsan/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zohar Nissare-Houssen&lt;/a&gt; in his 
+&lt;a href=&#34;https://github.com/zoharsan/snowflake-jupyter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snowflake-jupyter&lt;/a&gt; repo.&lt;/p&gt;
+&lt;h3 id=&#34;usecases&#34;&gt;Usecases&lt;/h3&gt;
+&lt;p&gt;I use R for a lot of data-wrangling, but also to help me with a lot of Data Engineering tasks. With R connected to snowflake, I have been able to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Speed up the writing of some SQL queries by utilizing the DBPlyr package&lt;/li&gt;
+&lt;li&gt;Create and clean tables&lt;/li&gt;
+&lt;li&gt;Schedule tasks that builds models from SnowfLake&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-to-use-the-container&#34;&gt;How to use the container&lt;/h3&gt;
+&lt;p&gt;The container is open for everyone to get at 
+&lt;a href=&#34;https://github.com/dannymawani/snowflake-r-docker&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My github page&lt;/a&gt;. Below I have written how to use the image:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;To build the image after pulling it from GitHub, write &lt;code&gt;docker build --tag dev:latest .&lt;/code&gt; in your terminal where you have changed the directory to the folder the docker file is in.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Write &lt;code&gt;docker run -d -p 8787:8787  -e PASSWORD=1234 dev:latest&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;(replace pass to your liking). If you want, you can mount a directory with a project to work on like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;docker run --rm -p 8787:8787 -v C:/Users/DannysComputer/Documents/rstudio:/home/rstudio -e PASSWORD=1234 dev:latest&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In order to just execute a script you can use:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-docker&#34;&gt;docker run dev:latest Rscript -e &#39;source(&amp;quot;/home/rstudio/main.R&amp;quot;)&#39; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can now log in at
+http://localhost:8787/&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;connect-to-snowflake&#34;&gt;Connect to snowflake&lt;/h4&gt;
+&lt;p&gt;Use this to set up a connection to Snowflake:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Load libraries
+library(tidyverse)
+library(odbc)
+library(DBI)
+#log in
+con &amp;lt;- DBI::dbConnect(
+  drv    = odbc::odbc(), 
+  UID    = &amp;quot;username&amp;quot;, 
+  PWD    = &amp;quot;password&amp;quot;, 
+  Server = &amp;quot;yourAccount.west-europe.azure.snowflakecomputing.com&amp;quot;,
+  Warehouse = &#39;COMPUTE_WH&#39;,
+  Driver = &amp;quot;SnowflakeDSIIDriver&amp;quot;,
+  Database = &amp;quot;yourDataBase&amp;quot;,
+  Schema = &amp;quot;yourSchema&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alternatively, you can edit the odbc.ini file included in this repo and connect by running:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;con &amp;lt;- dbConnect(odbc(), &amp;quot;snowflake&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;using-snowflake-with-r-and-tidyverse-commands&#34;&gt;Using snowflake with R and Tidyverse commands&lt;/h4&gt;
+&lt;p&gt;Below is some examples of things you can do after you have set up your connection with Snowflake&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Connect to a table or view
+df &amp;lt;- tbl(con, &#39;yourTableName&#39;)
+
+#Full load table
+data &amp;lt;- df%&amp;gt;%collect
+
+#Load 10 rows
+data &amp;lt;- head(10)%&amp;gt;%collect
+
+#add table
+dbCreateTable(con, &amp;quot;iris&amp;quot;, iris)
+
+#remove table
+dbRemoveTable(con, &amp;quot;iris&amp;quot;)
+
+#upload data
+dbWriteTable(con, &amp;quot;iris&amp;quot;, iris, overwrite = TRUE, row.names = FALSE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;rounding-things-up&#34;&gt;Rounding things up&lt;/h3&gt;
+&lt;p&gt;There are so many ways to interact with Snowflake. It is definitely one of my favorite platforms to work on at the moment. I personally enjoy using R for a variety of tasks, and having build this image has made things a bit easier for me. I hope this can be of use to others in the R commmunity using Snowflake.&lt;/p&gt;
+&lt;p&gt;Let me know if this post is easy to follow or if it needs additional explanation by leaving a comment.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Make sure your data is up to date in bigquery</title>
@@ -264,10 +362,10 @@ df &amp;lt;- sfData[sfData$ti %in% list1, ]
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;../img/transaction_example.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/transaction_example.png&#34; &gt;
 
 
-  &lt;img src=&#34;../img/transaction_example.png&#34; alt=&#34;&#34;  &gt;
+  &lt;img src=&#34;/img/transaction_example.png&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -534,10 +632,10 @@ upload &amp;lt;- rbind(upload,data)
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;../img/githubFrontpage_githubR.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/githubFrontpage_githubR.png&#34; &gt;
 
 
-  &lt;img src=&#34;../img/githubFrontpage_githubR.png&#34; alt=&#34;&#34;  &gt;
+  &lt;img src=&#34;/img/githubFrontpage_githubR.png&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -566,10 +664,10 @@ upload &amp;lt;- rbind(upload,data)
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;../img/createRepositories_githubR.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/createRepositories_githubR.png&#34; &gt;
 
 
-  &lt;img src=&#34;../img/createRepositories_githubR.png&#34; alt=&#34;&#34;  &gt;
+  &lt;img src=&#34;/img/createRepositories_githubR.png&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -604,10 +702,10 @@ upload &amp;lt;- rbind(upload,data)
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;../img/createBucket_githubR.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/createBucket_githubR.png&#34; &gt;
 
 
-  &lt;img src=&#34;../img/createBucket_githubR.png&#34; alt=&#34;&#34;  &gt;
+  &lt;img src=&#34;/img/createBucket_githubR.png&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -650,7 +748,7 @@ googleCloudStorageR::gcs_source(&#39;yoursubfolderifyouhaveone/yourscript.R&#39;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;A repository is a folder to which your content in github is stored. This is usually your code files. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A repository is a folder to which your content in github is stored. This is usually your code files.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;

@@ -5,12 +5,110 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>DMH Analytics</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0100</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 21 Sep 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>DMH Analytics</title>
       <link>/</link>
     </image>
+    
+    <item>
+      <title>Connecting to Snowflake With R</title>
+      <link>/post/connecting-to-snowflake-with-r/</link>
+      <pubDate>Tue, 21 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>/post/connecting-to-snowflake-with-r/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#usecases&#34;&gt;Usecases&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#how-to-use-the-container&#34;&gt;How to use the container&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#rounding-things-up&#34;&gt;Rounding things up&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;As my organization 
+&lt;a href=&#34;https://www.lederne.dk/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lederne&lt;/a&gt; are in a journey of switching from on-prem systems into 
+&lt;a href=&#34;https://www.snowflake.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Snowflake&lt;/a&gt; as our dataplatform, I have looked far and wide in order to find a production ready docker image that supports using R with 
+&lt;a href=&#34;https://www.snowflake.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Snowflake&lt;/a&gt;. As I could not find anything in my search, I decided to build an image myself. Thankfully a lot of the driver setup was already build for a Python image created by 
+&lt;a href=&#34;https://github.com/zoharsan/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zohar Nissare-Houssen&lt;/a&gt; in his 
+&lt;a href=&#34;https://github.com/zoharsan/snowflake-jupyter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snowflake-jupyter&lt;/a&gt; repo.&lt;/p&gt;
+&lt;h3 id=&#34;usecases&#34;&gt;Usecases&lt;/h3&gt;
+&lt;p&gt;I use R for a lot of data-wrangling, but also to help me with a lot of Data Engineering tasks. With R connected to snowflake, I have been able to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Speed up the writing of some SQL queries by utilizing the DBPlyr package&lt;/li&gt;
+&lt;li&gt;Create and clean tables&lt;/li&gt;
+&lt;li&gt;Schedule tasks that builds models from SnowfLake&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-to-use-the-container&#34;&gt;How to use the container&lt;/h3&gt;
+&lt;p&gt;The container is open for everyone to get at 
+&lt;a href=&#34;https://github.com/dannymawani/snowflake-r-docker&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My github page&lt;/a&gt;. Below I have written how to use the image:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;To build the image after pulling it from GitHub, write &lt;code&gt;docker build --tag dev:latest .&lt;/code&gt; in your terminal where you have changed the directory to the folder the docker file is in.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Write &lt;code&gt;docker run -d -p 8787:8787  -e PASSWORD=1234 dev:latest&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;(replace pass to your liking). If you want, you can mount a directory with a project to work on like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;docker run --rm -p 8787:8787 -v C:/Users/DannysComputer/Documents/rstudio:/home/rstudio -e PASSWORD=1234 dev:latest&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In order to just execute a script you can use:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-docker&#34;&gt;docker run dev:latest Rscript -e &#39;source(&amp;quot;/home/rstudio/main.R&amp;quot;)&#39; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can now log in at
+http://localhost:8787/&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;connect-to-snowflake&#34;&gt;Connect to snowflake&lt;/h4&gt;
+&lt;p&gt;Use this to set up a connection to Snowflake:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Load libraries
+library(tidyverse)
+library(odbc)
+library(DBI)
+#log in
+con &amp;lt;- DBI::dbConnect(
+  drv    = odbc::odbc(), 
+  UID    = &amp;quot;username&amp;quot;, 
+  PWD    = &amp;quot;password&amp;quot;, 
+  Server = &amp;quot;yourAccount.west-europe.azure.snowflakecomputing.com&amp;quot;,
+  Warehouse = &#39;COMPUTE_WH&#39;,
+  Driver = &amp;quot;SnowflakeDSIIDriver&amp;quot;,
+  Database = &amp;quot;yourDataBase&amp;quot;,
+  Schema = &amp;quot;yourSchema&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alternatively, you can edit the odbc.ini file included in this repo and connect by running:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;con &amp;lt;- dbConnect(odbc(), &amp;quot;snowflake&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;using-snowflake-with-r-and-tidyverse-commands&#34;&gt;Using snowflake with R and Tidyverse commands&lt;/h4&gt;
+&lt;p&gt;Below is some examples of things you can do after you have set up your connection with Snowflake&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Connect to a table or view
+df &amp;lt;- tbl(con, &#39;yourTableName&#39;)
+
+#Full load table
+data &amp;lt;- df%&amp;gt;%collect
+
+#Load 10 rows
+data &amp;lt;- head(10)%&amp;gt;%collect
+
+#add table
+dbCreateTable(con, &amp;quot;iris&amp;quot;, iris)
+
+#remove table
+dbRemoveTable(con, &amp;quot;iris&amp;quot;)
+
+#upload data
+dbWriteTable(con, &amp;quot;iris&amp;quot;, iris, overwrite = TRUE, row.names = FALSE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;rounding-things-up&#34;&gt;Rounding things up&lt;/h3&gt;
+&lt;p&gt;There are so many ways to interact with Snowflake. It is definitely one of my favorite platforms to work on at the moment. I personally enjoy using R for a variety of tasks, and having build this image has made things a bit easier for me. I hope this can be of use to others in the R commmunity using Snowflake.&lt;/p&gt;
+&lt;p&gt;Let me know if this post is easy to follow or if it needs additional explanation by leaving a comment.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Make sure your data is up to date in bigquery</title>
@@ -199,7 +297,7 @@ df &amp;lt;- sfData[sfData$ti %in% list1, ]
       <guid>/talk/r-on-google-cloud-platform/</guid>
       <description>&lt;p&gt;&lt;strong&gt;the slides&lt;/strong&gt;&lt;/p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 80.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;./slides/r-on-gcp-slides&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;/slides/r-on-gcp-slides&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
  &lt;/div&gt;</description>
     </item>
     
@@ -275,10 +373,10 @@ df &amp;lt;- sfData[sfData$ti %in% list1, ]
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;./img/transaction_example.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/transaction_example.png&#34; &gt;
 
 
-  &lt;img src=&#34;./img/transaction_example.png&#34; alt=&#34;&#34;  &gt;
+  &lt;img src=&#34;/img/transaction_example.png&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -545,10 +643,10 @@ upload &amp;lt;- rbind(upload,data)
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;./img/githubFrontpage_githubR.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/githubFrontpage_githubR.png&#34; &gt;
 
 
-  &lt;img src=&#34;./img/githubFrontpage_githubR.png&#34; alt=&#34;&#34;  &gt;
+  &lt;img src=&#34;/img/githubFrontpage_githubR.png&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -577,10 +675,10 @@ upload &amp;lt;- rbind(upload,data)
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;./img/createRepositories_githubR.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/createRepositories_githubR.png&#34; &gt;
 
 
-  &lt;img src=&#34;./img/createRepositories_githubR.png&#34; alt=&#34;&#34;  &gt;
+  &lt;img src=&#34;/img/createRepositories_githubR.png&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -615,10 +713,10 @@ upload &amp;lt;- rbind(upload,data)
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;./img/createBucket_githubR.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/createBucket_githubR.png&#34; &gt;
 
 
-  &lt;img src=&#34;./img/createBucket_githubR.png&#34; alt=&#34;&#34;  &gt;
+  &lt;img src=&#34;/img/createBucket_githubR.png&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -661,7 +759,7 @@ googleCloudStorageR::gcs_source(&#39;yoursubfolderifyouhaveone/yourscript.R&#39;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;A repository is a folder to which your content in github is stored. This is usually your code files. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A repository is a folder to which your content in github is stored. This is usually your code files.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -974,145 +1072,14 @@ bqr_upload_data(projectId = &amp;quot;your project id&amp;quot;,
 &lt;p&gt;@dannymawani (Twitter / Linkedin)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.mawani.dk&#34;&gt;www.mawani.dk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.mawani.dk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;www.mawani.dk&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;mailto:dmo@impact.dk&#34;&gt;dmo@impact.dk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;mailto:dmo@impact.dk&#34;&gt;dmo@impact.dk&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Slides</title>
-      <link>/slides/example/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/slides/example/</guid>
-      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-academic&#34;&gt;Create slides in Markdown with Academic&lt;/h1&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic&lt;/a&gt; | 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
-&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
-&lt;li&gt;Supports speaker notes&lt;/li&gt;
-&lt;li&gt;Mobile friendly slides&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
-&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Code block:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
-if porridge == &amp;quot;blueberry&amp;quot;:
-    print(&amp;quot;Eating...&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
-&lt;p&gt;Block math:&lt;/p&gt;
-&lt;p&gt;$$
-f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
-&lt;p&gt;Make content appear incrementally&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} **Two** {{% /fragment %}}
-{{% fragment %}} Three {{% /fragment %}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-One
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-&lt;strong&gt;Two&lt;/strong&gt;
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-Three
-&lt;/span&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
-&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
-- Only the speaker can read these notes
-- Press `S` key to view
-{{% /speaker_note %}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
-&lt;aside class=&#34;notes&#34;&gt;
-  &lt;ul&gt;
-&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/aside&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
-&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
-&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
-&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
-&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
-&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;/img/boards.jpg&#34;
-  &gt;
-
-&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
-&lt;p&gt;Customize the slide style and background&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
-{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
-{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
-&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -1166,24 +1133,6 @@ Three
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/uz2aLKQKZ2CSiB&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/DannyMawaniOlsen/rclass&#34; title=&#34;Rclass&#34; target=&#34;_blank&#34;&gt;Rclass&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/DannyMawaniOlsen&#34; target=&#34;_blank&#34;&gt;Danny Mawani Olsen&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:a2aa2406-42b7-4030-8bb9-fa53525d20c8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;full link here&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/terms/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     

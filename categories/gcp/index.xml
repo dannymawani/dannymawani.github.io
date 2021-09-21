@@ -318,10 +318,12 @@ bqr_upload_data(projectId = &amp;quot;your project id&amp;quot;,
 &lt;p&gt;@dannymawani (Twitter / Linkedin)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.mawani.dk&#34;&gt;www.mawani.dk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.mawani.dk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;www.mawani.dk&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;mailto:dmo@impact.dk&#34;&gt;dmo@impact.dk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;mailto:dmo@impact.dk&#34;&gt;dmo@impact.dk&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
